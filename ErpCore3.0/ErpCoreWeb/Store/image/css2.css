@@ -1,0 +1,1419 @@
+.mod-clothing-tab {
+	width: 530px; height: 280px; overflow: hidden; margin-right: 10px; float: left; position: relative; z-index: 0;
+}
+.mod-clothing-tab {
+	width: 530px; height: 280px; overflow: hidden;
+}
+.mod-clothing-tab .slider-container {
+	width: 530px; height: 280px; overflow: hidden;
+}
+.mod-clothing-tab .slider-pic li {
+	width: 530px; height: 280px; overflow: hidden;
+}
+.mod-clothing-tab .slider-trigger {
+	height: 20px; right: 8px; bottom: 8px; position: absolute; z-index: 1;
+}
+.mod-clothing-tab .slider-trigger li {
+	background: rgb(255, 255, 255); border-radius: 4px; width: 20px; height: 20px; text-align: center; color: rgb(251, 165, 52); line-height: 20px; font-weight: bold; margin-left: 3px; float: left; display: inline; filter: alpha(opacity=60); cursor: pointer; opacity: 0.6;
+}
+.mod-clothing-tab .slider-trigger li.current {
+	filter: alpha(opacity=100); opacity: 1;
+}
+.mod-hot-goods {
+	width: 100%; height: 350px; overflow: hidden;
+}
+.mod-hot-goods .header {
+	height: 38px; 
+}
+.mod-hot-goods .header h4 {
+	padding: 0px 10px; width: 140px; color: rgb(102, 102, 102); font-size: 16px;
+}
+.mod-hot-goods .header h4 em {
+	color: rgb(118, 98, 79); font-weight: 700;
+}
+.mod-hot-goods .header li {
+	background-position: right -331px; padding: 10px 8px; height: 18px; color: rgb(102, 102, 102); line-height: 18px; cursor: pointer;
+}
+.mod-hot-goods .header li.last {
+	background: 0px;
+}
+.mod-hot-goods .header li span {
+	padding: 3px 4px;
+}
+.mod-hot-goods .header li.current span {
+	border-radius: 2px; color: rgb(255, 255, 255); font-weight: 700; background-color: rgb(118, 98, 79);
+}
+.mod-hot-goods .header .link {
+	color: rgb(51, 51, 51); float: right;
+}
+.mod-hot-goods .header .link a:hover {
+	text-decoration: none;
+}
+.mod-hot-goods .header .link em {
+	padding: 0px 6px; color: rgb(204, 0, 0); font-weight: 700;
+}
+.mod-hot-goods .content {
+	width: 990px; height: 298px; overflow: hidden; padding-top: 10px;
+}
+.mod-hot-goods .content .f-tab-b {
+	width: 990px; height: 298px; overflow: hidden;
+}
+.mod-hot-goods .f-tab-hide {
+	
+}
+.mod-hot-goods .content .offer-list {
+	width: 990px; overflow: hidden; float: left;
+}
+.mod-hot-goods .offer-list li {
+	width: 260px; height: 140px; margin-right: 10px; margin-bottom: 18px; float: left;
+}
+.mod-hot-goods .offer-list li.fix {
+	margin-bottom: 0px;
+}
+.mod-hot-goods .offer-list dt {
+	width: 120px; height: 140px; margin-right: 8px;
+}
+.mod-hot-goods .offer-list dd.description {
+	color: rgb(51, 51, 51); line-height: 22px; padding-top: 4px; font-size: 14px; font-weight: 700;
+}
+.mod-hot-goods .offer-list dd.description a {
+	color: rgb(51, 51, 51);
+}
+.mod-hot-goods .offer-list dd.style {
+	color: rgb(68, 68, 68);
+}
+.mod-hot-goods .offer-list dd.price {
+	height: 24px; color: rgb(204, 0, 0); line-height: 24px; font-size: 10px; font-weight: 700; -webkit-text-size-adjust: none;
+}
+.mod-hot-goods .offer-list dd.price label {
+	background-position: 0px -139px; width: 44px; height: 18px; vertical-align: text-bottom; display: inline-block;
+}
+.mod-hot-goods .offer-list dd.price strong {
+	font-size: 16px;
+}
+.mod-hot-goods .offer-list dd.sale-quantity {
+	color: rgb(153, 153, 153);
+}
+.mod-hot-goods .offer-list dd.buyer {
+	color: rgb(153, 153, 153);
+}
+.mod-hot-goods .offer-list dd.sale-quantity em {
+	padding: 0px 2px; font-weight: 700;
+}
+.mod-hot-goods .offer-list dd.buyer em {
+	padding: 0px 2px; font-weight: 700;
+}
+.mod-hot-goods .offer-list dd.company {
+	height: 18px; padding-top: 18px;
+}
+.mod-hot-goods .offer-list dd.company a {
+	color: rgb(153, 153, 153);
+}
+.mod-hot-goods .content .bomb {
+	width: 239px; border-left-color: rgb(235, 234, 229); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.mod-hot-goods .content .bomb-wrap {
+	width: 239px; height: 298px; position: relative;
+}
+.mod-hot-goods .bomb img {
+	vertical-align: top;
+}
+.mod-hot-goods .bomb a.next {
+	left: 175px; top: 0px; width: 64px; height: 298px; display: block; position: absolute;
+}
+.mod-hot-goods .bomb a.next em {
+	background-position: 22px -188px; width: 64px; height: 40px; margin-top: 121px; display: block; cursor: pointer;
+}
+.mod-hot-goods .bomb a.next:hover em {
+	background-position: 22px -238px;
+}
+.mod-integrity {
+	height: 28px; overflow: visible; margin-bottom: 0px; position: relative; z-index: 3;
+}
+.mod-integrity h4 {
+	font-weight: bold;
+}
+.mod-integrity a:link {
+	color: rgb(51, 51, 51);
+}
+.mod-integrity a:visited {
+	color: rgb(51, 51, 51);
+}
+.mod-integrity a:hover {
+	color: rgb(255, 115, 0);
+}
+.mod-integrity a:active {
+	color: rgb(255, 115, 0);
+}
+.mod-integrity ul {
+	zoom: 1;
+}
+.mod-integrity ul::after {
+	height: 0px; clear: both; display: block; content: "\0020";
+}
+.mod-integrity li.integrity-safe {
+	border: 1px solid rgb(232, 232, 232); width: 85px; height: 27px; color: rgb(51, 51, 51); line-height: 27px; padding-left: 33px; font-weight: bold; float: left; position: relative; cursor: pointer;
+}
+.mod-integrity li.integrity-trust {
+	border: 1px solid rgb(232, 232, 232); width: 85px; height: 27px; color: rgb(51, 51, 51); line-height: 27px; padding-left: 33px; font-weight: bold; float: left; position: relative; cursor: pointer;
+}
+.mod-integrity li.integrity-safe {
+	width: 86px; border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.mod-integrity .icon {
+	display: block; position: absolute;
+}
+.mod-integrity .icon-safe {
+	left: 10px; top: 5px; width: 16px; height: 20px;
+}
+.mod-integrity .icon-trust {
+	left: 10px; top: 5px; width: 16px; height: 20px;
+}
+.mod-integrity .icon-safe {
+	background-position: -1px 2px;
+}
+.mod-integrity .icon-trust {
+	background-position: -1px -29px;
+}
+.mod-integrity .icon-dropdown {
+	background-position: 0px -60px; top: 10px; width: 8px; height: 8px; right: 12px;
+}
+.mod-integrity .integrity-expansion {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(231, 231, 231) rgb(231, 231, 231); padding: 0px 8px; width: 222px; height: 163px; overflow: hidden; display: none; position: absolute; background-color: rgb(255, 255, 255);
+}
+.mod-integrity .integrity-expansion .inte-ex-content {
+	padding: 6px 3px 11px; color: rgb(102, 102, 102); line-height: 18px; font-weight: 300;
+}
+.mod-integrity .integrity-expansion .inte-ex-bottom {
+	padding: 4px 0px; height: 28px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: dashed;
+}
+.mod-integrity .integrity-expansion .inte-ex-content p {
+	margin-top: 8px;
+}
+.mod-integrity .integrity-safe .inte-ex-bottom a {
+	margin: 4px 0px; height: 22px; line-height: 22px; overflow: hidden; font-weight: 300; border-right-color: rgb(231, 231, 231); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.mod-integrity .integrity-safe .inte-ex-bottom .inte-ex-btn {
+	background-position: 0px -120px; width: 100px; height: 22px; line-height: 0; padding-right: 13px; font-size: 0px; margin-top: 4px; display: inline-block;
+}
+.mod-integrity .integrity-safe .inte-ex-bottom .bind-alipay {
+	height: 22px; padding-left: 13px; border-right-color: currentColor !important; border-right-width: medium !important; border-right-style: none !important; display: inline-block;
+}
+.mod-integrity ul.right-list li {
+	border: 0px currentColor; width: 222px; height: 24px; color: rgb(102, 102, 102); line-height: 24px; font-weight: 300; float: left;
+}
+.mod-integrity ul.right-list li span.decimal {
+	width: 18px; color: rgb(153, 153, 153); font-weight: 700; display: inline-block;
+}
+.mod-integrity ul.right-list .icon-bao {
+	background-position: -1px -26px; margin: 0px 4px; left: 62px; top: 84px; width: 16px; height: 24px;
+}
+.mod-integrity ul.right-list a.icon-right {
+	background-position: 0px -150px; top: 132px; width: 70px; height: 22px; text-align: center; right: 24px; color: rgb(255, 255, 255); line-height: 20px; margin-left: 12px; display: inline;
+}
+.mod-integrity ul.right-list a.icon-right:hover {
+	color: rgb(255, 255, 255) !important; text-decoration: none;
+}
+.mod-integrity li.integrity-safe .integrity-expansion {
+	left: -1px; top: 28px;
+}
+.mod-integrity li.integrity-trust .integrity-expansion {
+	left: -121px; top: 28px;
+}
+.mod-integrity li.current {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mod-integrity li.current .icon-dropdown {
+	background-position: 0px -90px;
+}
+.mod-integrity li.current .integrity-expansion {
+	display: block;
+}
+.mod-cal {
+	border-width: 0px 1px; border-style: solid; border-color: rgb(232, 232, 232); padding: 4px 0px 4px 8px; height: 40px; color: rgb(102, 102, 102); overflow: hidden; margin-bottom: 0px; zoom: 1;
+}
+.mod-cal::after {
+	height: 0px; clear: both; display: block; content: "\0020";
+}
+.mod-cal div {
+	height: 40px; float: left;
+}
+.mod-cal .cal-ym {
+	text-align: center; font-family: Arial; font-weight: bold;
+}
+.mod-cal .cal-d {
+	text-align: center; font-family: Arial; font-weight: bold;
+}
+.mod-cal .cal-ym {
+	width: 29px; color: rgb(68, 68, 68);
+}
+.mod-cal .cal-d {
+	width: 46px; color: rgb(213, 49, 20); line-height: 40px; font-size: 40px;
+}
+.mod-cal .cal-year {
+	height: 11px; line-height: 11px; padding-top: 4px; font-size: 11px; display: block;
+}
+.mod-cal .cal-month {
+	height: 24px; line-height: 22px; font-size: 24px; display: block;
+}
+.mod-cal .cal-trends {
+	width: 145px; color: rgb(136, 136, 136); line-height: 20px; margin-left: 4px;
+}
+.mod-cal em {
+	color: rgb(206, 2, 5); font-weight: bold;
+}
+.mod-newbie-guide {
+	border: 2px solid rgb(205, 197, 187); height: 96px; margin-bottom: 10px; background-color: rgb(240, 233, 225);
+}
+.mod-newbie-guide .login-reg .login {
+	top: 63px; position: absolute;
+}
+.mod-newbie-guide .login-reg .reg {
+	top: 63px; position: absolute;
+}
+.mod-newbie-guide .login-reg a.login:link {
+	color: rgb(249, 255, 212);
+}
+.mod-newbie-guide .login-reg a.login:visited {
+	color: rgb(249, 255, 212);
+}
+.mod-newbie-guide .login-reg a.reg:link {
+	color: rgb(249, 255, 212);
+}
+.mod-newbie-guide .login-reg a.reg:visited {
+	color: rgb(249, 255, 212);
+}
+.mod-newbie-guide .login-reg .login:hover {
+	color: rgb(249, 255, 212) !important; text-decoration: underline;
+}
+.mod-newbie-guide .login-reg .reg:hover {
+	color: rgb(249, 255, 212) !important; text-decoration: underline;
+}
+.mod-newbie-guide .login-reg .login {
+	left: 133px;
+}
+.mod-newbie-guide .login-reg .reg {
+	left: 26px;
+}
+.mod-newbie-guide .cell {
+	width: 264px; height: 100%; border-left-color: rgb(226, 217, 205); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.mod-newbie-guide .cell h5 {
+	height: 29px; color: rgb(80, 68, 57); line-height: 29px; padding-left: 16px; font-weight: bold; margin-bottom: 6px; border-bottom-color: rgb(226, 217, 205); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.mod-newbie-guide .cell p {
+	color: rgb(147, 128, 108); padding-left: 16px;
+}
+.mod-newbie-guide .cell p em {
+	color: rgb(80, 68, 57); line-height: 17px; font-weight: bold;
+}
+.region {
+	margin-bottom: 10px;
+}
+.region::after {
+	height: 0px; clear: both; display: block; content: "\0020";
+}
+.region-market {
+	width: 240px; height: 280px; overflow: hidden; margin-bottom: 0px; float: left;
+}
+.mod-newrec {
+	border: 1px solid rgb(239, 235, 230); height: 201px;
+}
+.mod-newrec .cell-header {
+	background: rgb(250, 249, 247); padding: 0px 9px; height: 28px; color: rgb(105, 96, 89); line-height: 28px; position: relative; z-index: 0;
+}
+.mod-newrec .cell-header h3 {
+	color: rgb(51, 51, 51);
+}
+.mod-newrec .cell-header a.next {
+	top: 7px; width: 13px; height: 13px; overflow: hidden; font-size: 0px; text-decoration: none; display: block; position: absolute;
+}
+.mod-newrec .cell-header a.prev {
+	top: 7px; width: 13px; height: 13px; overflow: hidden; font-size: 0px; text-decoration: none; display: block; position: absolute;
+}
+.mod-newrec .cell-header a.next:hover {
+	text-decoration: none;
+}
+.mod-newrec .cell-header a.prev:hover {
+	text-decoration: none;
+}
+.mod-newrec .cell-header a.next {
+	background-position: -45px -50px; right: 10px;
+}
+.mod-newrec .cell-header a.next:hover {
+	background-position: -17px -50px;
+}
+.mod-newrec .cell-header a.prev {
+	background-position: -30px -50px; right: 26px;
+}
+.mod-newrec .cell-header a.prev:hover {
+	background-position: 0px -50px;
+}
+.mod-newrec .cell-header a span {
+	display: none;
+}
+.mod-newrec .cell-body {
+	width: 238px; height: 166px; overflow: hidden;
+}
+.mod-newrec .cell-body .newrec-list .f-tab-b {
+	width: 238px; height: 166px; overflow: hidden; float: left;
+}
+.mod-newrec .product-list {
+	text-align: left;
+}
+.mod-newrec .product-list .item {
+	width: 224px; height: 75px; padding-left: 10px; float: left;
+}
+.mod-newrec .product-list dt {
+	width: 80px; height: 80px; overflow: hidden; float: left;
+}
+.mod-newrec .product-list dd {
+	width: 120px; height: 20px; overflow: hidden; padding-left: 9px; float: left;
+}
+.mod-newrec .product-title {
+	margin-top: 11px;
+}
+.mod-newrec .product-title a:link {
+	color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;
+}
+.mod-newrec .product-title a:visited {
+	color: rgb(51, 51, 51); font-weight: bold; text-decoration: none;
+}
+.mod-newrec .product-title a:hover {
+	color: rgb(255, 115, 0); text-decoration: underline;
+}
+.mod-newrec .product-time em {
+	color: rgb(136, 136, 136); font-weight: bold;
+}
+.mod-newrec .product-join em {
+	color: rgb(204, 0, 0); font-weight: bold;
+}
+.mod-newrec .product-list .item {
+	padding-top: 8px;
+}
+.mod-cat {
+	height: 640px; overflow: visible; z-index: 1000;
+}
+.mod-cat .header {
+	padding: 0px 10px; height: 28px; color: rgb(255, 255, 255); line-height: 28px; font-size: 14px; font-weight: 700; background-color: rgb(200, 11, 0);
+}
+.mod-cat .content {
+	border: 1px solid rgb(200, 11, 0); height: 610px;
+}
+.mod-cat .cat-content {
+	height: 582px; background-color: rgb(254, 249, 244); _overflow: hidden;
+}
+.mod-cat .cat-content li.cat-box {
+	border-top-color: rgb(246, 229, 221); border-top-width: 1px; border-top-style: solid; position: relative; z-index: 3;
+}
+.mod-cat .cat-content li.current {
+	margin-bottom: -1px; border-top-color: rgb(200, 11, 0); border-bottom-color: rgb(200, 11, 0); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; z-index: 5;
+}
+.mod-cat .cat-content .main-item {
+	padding: 10px 4px 8px 8px;
+}
+.mod-cat .cat-content li.current .main-item {
+	position: relative; z-index: 999; background-color: rgb(247, 247, 247);
+}
+.mod-cat .cat-content .main-item h4 {
+	background-position: 172px -28px; height: 20px; line-height: 20px; font-size: 14px;
+}
+.mod-cat .cat-content li.no-sub .main-item h4 {
+	background-image: none;
+}
+.mod-cat .cat-content .main-item li {
+	width: 60px; height: 20px; line-height: 20px; overflow: hidden; padding-right: 2px; float: left;
+}
+.mod-cat .cat-content .cat-box a:link {
+	color: rgb(68, 68, 68);
+}
+.mod-cat .cat-content .cat-box a:visited {
+	color: rgb(68, 68, 68);
+}
+.mod-cat .cat-content .cat-box h4 a:link {
+	color: rgb(200, 11, 0);
+}
+.mod-cat .cat-content .cat-box h4 a:visited {
+	color: rgb(200, 11, 0);
+}
+.mod-cat .sub-category {
+	border: 1px solid rgb(200, 11, 0); left: 197px; top: 0px; width: 568px; overflow: hidden; margin-top: -1px; display: none; position: absolute; z-index: 5; background-color: rgb(255, 255, 255);
+}
+.mod-cat .current .sub-category {
+	display: block; background-color: rgb(247, 247, 247);
+}
+.mod-cat .sub-category .sub-left {
+	padding-bottom: 999px; margin-bottom: -999px;
+}
+.mod-cat .sub-category .sub-right {
+	padding-bottom: 999px; margin-bottom: -999px;
+}
+.mod-cat .sub-category .sub-left {
+	width: 328px; overflow: hidden; float: left; display: inline;
+}
+.mod-cat .sub-category .sub-right {
+	width: 238px; overflow: hidden; border-left-color: rgb(200, 11, 0); border-left-width: 1px; border-left-style: solid; float: left; background-color: rgb(243, 236, 236);
+}
+.mod-cat .sub-category li.sub-cat-box {
+	padding: 14px 0px; width: 312px; overflow: hidden; border-bottom-color: rgb(211, 211, 211); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.mod-cat .sub-category .sub-left li.sub-cat-box {
+	margin: 0px 8px;
+}
+.mod-cat .sub-category .sub-right li.sub-cat-box {
+	margin: 0px 4px;
+}
+.mod-cat .sub-category .sub-cat-box h5 {
+	padding: 4px; width: 56px; float: left;
+}
+.mod-cat .sub-category .sub-cat-box h5 a {
+	color: rgb(211, 51, 19) !important; font-weight: 700;
+}
+.mod-cat .sub-category .sub-cat-box ul {
+	width: 248px; overflow: hidden; float: left;
+}
+.mod-cat .sub-category .sub-cat-box li {
+	padding: 0px 4px; width: 74px; height: 26px; line-height: 26px; overflow: hidden; float: left;
+}
+.mod-cat .sub-category .sub-more {
+	margin: 12px auto; padding: 10px 12px; border-radius: 2px; width: 198px; height: 34px; background-color: rgb(200, 11, 0); -moz-border-radius: 2px;
+}
+.mod-cat .sub-category .sub-more h5 {
+	padding: 0px; width: 133px; color: rgb(255, 255, 255); font-weight: 700; float: left;
+}
+.mod-cat .sub-category .sub-more p {
+	color: rgb(255, 255, 255);
+}
+.mod-cat .sub-category .sub-more a {
+	width: 50px; color: rgb(255, 255, 255); padding-right: 15px; float: left; position: relative;
+}
+.mod-cat .cat-viewall {
+	height: 27px; line-height: 27px; border-top-color: rgb(239, 220, 202); border-top-width: 1px; border-top-style: solid; background-color: rgb(255, 236, 217);
+}
+.mod-cat .cat-viewall a {
+	background-position: 174px -50px; text-align: right; padding-right: 26px; display: block;
+}
+.mod-cat .cat-viewall a:link {
+	color: rgb(200, 11, 0);
+}
+.mod-cat .cat-viewall a:visited {
+	color: rgb(200, 11, 0);
+}
+.mod-cat .sub-pro-box .spb-header {
+	margin: 0px 5px; height: 33px; padding-top: 16px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.mod-cat .sub-pro-box .spb-header h5 {
+	color: rgb(211, 51, 19); font-weight: bold; margin-left: 8px;
+}
+.mod-cat .sub-pro-box .spb-header span {
+	color: rgb(0, 0, 0); margin-right: 7px; float: right;
+}
+.mod-cat .sub-pro-box .spb-header span em {
+	color: rgb(211, 51, 19); font-weight: bold;
+}
+.mod-cat .sub-pro-box .spb-content {
+	padding: 12px 0px;
+}
+.mod-cat .sub-pro-box .spb-content li {
+	width: 100px; height: 26px; line-height: 26px; padding-left: 12px; float: left;
+}
+.mod-cat .sub-pro-box .spb-content li.title {
+	width: auto; color: rgb(51, 51, 51); clear: both; float: none;
+}
+.mod-cat .sub-pro-box .spb-content li.title-2rd {
+	padding-top: 16px;
+}
+.mod-cat .sub-pro-box .spb-content li a:link {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.mod-cat .sub-pro-box .spb-content li a:visited {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.mod-cat .sub-pro-box .spb-content li a:hover {
+	text-decoration: underline;
+}
+.mod-cat .sub-pro-box .spb-footer {
+	height: 80px; text-align: center; margin-top: 8px;
+}
+.mod-cat .sub-pro-box .spb-footer img {
+	border: 1px solid rgb(204, 204, 204);
+}
+.mod-gallery {
+	width: 100%; height: 280px; margin-top: 15px;
+}
+.mod-gallery .gallery {
+	height: 277px; overflow: hidden; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-top-width: 2px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; float: left;
+}
+.mod-gallery .gallery img {
+	vertical-align: middle;
+}
+.mod-gallery .gallery a {
+	text-decoration: none !important; display: block; cursor: pointer;
+}
+.mod-gallery .gallery-g1 {
+	width: 199px; border-top-color: rgb(240, 192, 183); border-bottom-color: rgb(240, 192, 183); border-left-color: rgb(240, 192, 183);
+}
+.mod-gallery .gallery-g1 .bb {
+	border-bottom-color: rgb(240, 192, 183); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mod-gallery .gallery-g2 {
+	width: 199px; border-top-color: rgb(212, 195, 176); border-bottom-color: rgb(212, 195, 176); border-left-color: rgb(212, 195, 176);
+}
+.mod-gallery .gallery-g2 .bb {
+	border-bottom-color: rgb(212, 195, 176); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mod-gallery .gallery-g3 {
+	width: 349px; border-top-color: rgb(188, 202, 166); border-bottom-color: rgb(188, 202, 166); border-left-color: rgb(188, 202, 166);
+}
+.mod-gallery .gallery-g3 .bb {
+	border-bottom-color: rgb(188, 202, 166); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mod-gallery .gallery-g4 {
+	border-color: rgb(204, 214, 238); width: 238px; border-right-width: 1px; border-right-style: solid;
+}
+.mod-gallery .gallery-g4 .bb {
+	border-bottom-color: rgb(204, 214, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mod-floor .mod-header .more a {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.mod-floor .mod-body .goods-list .attr {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.mod-floor .mod-body .goods-list .attr .star {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.mod-floor .mod-body .goods-list .com .grade {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.mod-floor .mod-body .goods-list .attr .price span {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.mod-floor .goods-list .color li.mix {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.mod-tabao-hot-goods .mod-header .more a {
+	background: url("378527_1301427272.png?m=3") no-repeat -999px -999px;
+}
+.w952 {
+	margin: 0px auto; width: 990px;
+}
+.layout-col::after {
+	height: 0px; overflow: hidden; clear: both; display: block; content: "\0020";
+}
+.mod-floor {
+	width: 100%; height: 478px; margin-top: 30px;
+}
+.mod-floor .mod-header {
+	background: url("floor.png") repeat-x 0px 0px rgb(213, 211, 199); height: 40px; border-right-color: rgb(213, 211, 199); border-right-width: 1px; border-right-style: solid; position: relative;
+}
+.mod-floor .mod-header h2 {
+	background: url("floor.png") no-repeat -999px -999px; left: 0px; top: 0px; width: 280px; height: 40px; display: block; position: absolute;
+}
+.mod-floor .mod-header h2 em {
+	left: 117px; top: 6px; position: absolute;
+}
+.mod-floor .mod-header .tag-list {
+	height: 40px; margin-left: 333px; float: left; display: inline-block; _display: inline;
+}
+.mod-floor .mod-header .tag-list li {
+	width: 100px; height: 40px; text-align: center; line-height: 40px; border-left-color: rgb(213, 211, 199); border-left-width: 1px; border-left-style: solid; float: left; display: inline-block;
+}
+.mod-floor .mod-header .tag-list li a {
+	width: 100%; height: 100%; display: block;
+}
+.mod-floor .mod-header .tag-list li.last {
+	border-right-color: rgb(213, 211, 199); border-right-width: 1px; border-right-style: solid;
+}
+.mod-floor .mod-header .tag-list li.current {
+	height: 40px; color: rgb(99, 87, 76); font-size: 14px; font-weight: bold; margin-top: -1px; border-top-color: rgb(213, 211, 199); border-top-width: 1px; border-top-style: solid; position: relative; background-color: rgb(255, 255, 255);
+}
+.mod-floor .mod-header .tag-list a:link {
+	color: rgb(99, 87, 76); text-decoration: none;
+}
+.mod-floor .mod-header .tag-list a:visited {
+	color: rgb(99, 87, 76); text-decoration: none;
+}
+.mod-floor .mod-header .tag-list a:hover {
+	color: rgb(99, 87, 76) !important; text-decoration: underline;
+}
+.mod-floor .mod-header .more {
+	margin-right: 14px; float: right; _display: inline;
+}
+.mod-floor .mod-header .more a {
+	background-position: right 1px; height: 17px; color: rgb(99, 87, 76) !important; padding-right: 20px; font-weight: bold; margin-top: 12px; display: inline-block;
+}
+.mod-floor .mod-body {
+	width: 990px; height: 455px; overflow: hidden;
+}
+.mod-floor .mod-body .items {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(236, 235, 230) rgb(236, 235, 230); width: 988px; height: 348px;
+}
+.mod-floor .mod-body .items .tags {
+	height: 19px; padding-top: 10px;
+}
+.mod-floor .mod-body .items .tags li {
+	padding: 0px 16px; height: 14px; line-height: 14px; overflow: hidden; border-left-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.mod-floor .mod-body .items .tags a {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.mod-floor .mod-body .items .tags a:hover {
+	text-decoration: underline;
+}
+.mod-floor .mod-body .items .tags-wrap {
+	margin-left: 193px;
+}
+.mod-floor .mod-body .items .tags-wrap::after {
+	height: 0px; overflow: hidden; clear: both; display: block; content: "\0020";
+}
+.mod-floor .mod-body .items .tags ul {
+	height: 17px; float: left; display: block; zoom: 1;
+}
+.mod-floor .mod-body .items .tags li.first {
+	border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.mod-floor .mod-body .f-tab-b {
+	width: 988px; height: 348px;
+}
+.mod-floor .mod-body .f-tab-b .shopwindow {
+	width: 185px; height: 296px; padding-right: 7px; padding-left: 7px; margin-top: 6px; border-right-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.mod-floor .mod-body .goods-list {
+	margin-top: 0px; margin-left: 6px; float: left; _display: inline;
+}
+.mod-floor .mod-body .goods-list li.goods {
+	width: 194px; height: 318px; margin-left: 0px; float: left; position: relative; z-index: 99; min-height: 200px; _display: inline;
+}
+.mod-floor .mod-body .goods-list li.hover {
+	z-index: 100;
+}
+.mod-floor .mod-body .goods-list li.goods .wrap {
+	padding: 6px 7px; border: 0px solid rgb(211, 203, 194); width: 180px; height: 298px; z-index: 3; min-height: 200px; background-color: rgb(255, 255, 255);
+}
+.mod-floor .mod-body .goods-list li.hover .wrap {
+	margin: -1px; border: 1px solid rgb(255, 115, 0); left: 0px; top: 0px; height: 350px; position: absolute; z-index: 4;
+}
+.mod-floor .mod-body .goods-list .pic {
+	width: 180px; height: 220px; overflow: hidden; position: relative;
+}
+.mod-floor .mod-body .goods-list .mask {
+	left: 0px; width: 100%; height: 30px; bottom: 0px; display: none; filter: alpha(opacity=70); position: absolute; z-index: 10; opacity: 0.7; background-color: rgb(0, 0, 0);
+}
+.mod-floor .mod-body .goods-list li.hover .mask {
+	display: block;
+}
+.mod-floor .mod-body .goods-list .color {
+	left: 0px; width: 100%; height: 30px; bottom: 0px; line-height: 30px; display: none; position: absolute; z-index: 11;
+}
+.mod-floor .mod-body .goods-list li.hover .color {
+	display: block;
+}
+.mod-floor .goods-list .color em {
+	color: rgb(255, 255, 255); padding-left: 8px; font-weight: bold; float: left;
+}
+.mod-floor .goods-list .color ul {
+	margin-right: 8px; float: right; _display: inline;
+}
+.mod-floor .goods-list .color li {
+	border: 1px solid rgb(102, 102, 102); width: 13px; height: 13px; overflow: hidden; font-size: 0px; margin-top: 8px; margin-left: 5px; float: left; display: block;
+}
+.mod-floor .mod-body .goods-list h2 {
+	height: 26px; line-height: 26px; overflow: hidden; font-size: 12px; font-weight: normal; word-break: break-all;
+}
+.mod-floor .mod-body .goods-list .attr {
+	background-position: -146px -25px; width: 180px; height: 60px; position: relative;
+}
+.mod-floor .mod-body .goods-list .attr .price {
+	left: 1px; top: 26px; width: 52px; text-align: center; color: rgb(204, 0, 0); font-family: Tahoma; font-size: 14px; font-weight: bold; display: block; position: absolute;
+}
+.mod-floor .mod-body .goods-list .attr .price span {
+	background-position: 0px -308px; padding-left: 7px; display: inline-block; _background-position: 0 -308px;
+}
+.mod-floor .mod-body .goods-list .attr p {
+	left: 0px; height: 15px; color: rgb(153, 153, 153); line-height: 15px; padding-left: 58px; position: absolute;
+}
+.mod-floor .mod-body .goods-list .attr .reviews {
+	top: -3px;
+}
+.mod-floor .mod-body .goods-list .attr .deal-count {
+	top: 18px;
+}
+.mod-floor .mod-body .goods-list .attr .record {
+	top: 34px;
+}
+.mod-floor .mod-body .goods-list .attr .star {
+	background-position: 0px 5px; height: 14px; padding-top: 2px; display: inline-block;
+}
+.mod-floor .mod-body .goods-list .attr .star1 {
+	width: 11px;
+}
+.mod-floor .mod-body .goods-list .attr .star2 {
+	width: 23px;
+}
+.mod-floor .mod-body .goods-list .attr .star3 {
+	width: 35px;
+}
+.mod-floor .mod-body .goods-list .attr .star4 {
+	width: 47px;
+}
+.mod-floor .mod-body .goods-list .attr .star5 {
+	width: 59px;
+}
+.mod-floor .mod-body .goods-list .attr p em {
+	color: rgb(68, 68, 68); padding-right: 2px; font-weight: bold;
+}
+.mod-floor .mod-body .goods-list .attr i {
+	font-size: 10px; font-style: normal;
+}
+.mod-floor .mod-body .goods-list .attr .qbegin {
+	top: -1px;
+}
+.mod-floor .mod-body .goods-list .com {
+	height: 38px; overflow: hidden; padding-top: 5px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: dotted; display: none;
+}
+.mod-floor .goods-list li.hover .com {
+	display: block;
+}
+.mod-floor .mod-body .goods-list .com h3 {
+	width: 180px; height: 17px; text-align: left; line-height: 17px; overflow: hidden; font-weight: normal; display: block; word-break: break-all;
+}
+.mod-floor .mod-body .goods-list .com p {
+	height: 19px; color: rgb(153, 153, 153); line-height: 17px; overflow: hidden; padding-top: 3px;
+}
+.mod-floor .mod-body .goods-list .com span {
+	float: left; display: block;
+}
+.mod-floor .mod-body .goods-list .com .grade {
+	background-position: 0px -24px; height: 17px;
+}
+.mod-floor .mod-body .goods-list .com .grade1 {
+	width: 16px;
+}
+.mod-floor .mod-body .goods-list .com .grade2 {
+	width: 32px;
+}
+.mod-floor .mod-body .goods-list .com .grade3 {
+	width: 48px;
+}
+.mod-floor .mod-body .goods-list .com .grade4 {
+	width: 64px;
+}
+.mod-floor .mod-body .goods-list .com .grade5 {
+	width: 80px;
+}
+.mod-floor .goods-list .color li.yellow {
+	background-color: rgb(249, 233, 3);
+}
+.mod-floor .goods-list .color li.orange {
+	background-color: rgb(247, 96, 2);
+}
+.mod-floor .goods-list .color li.pink {
+	background-color: rgb(243, 152, 170);
+}
+.mod-floor .goods-list .color li.red {
+	background-color: rgb(227, 17, 5);
+}
+.mod-floor .goods-list .color li.mix {
+	background-position: -187px -90px;
+}
+.mod-floor .goods-list .color li span {
+	display: none;
+}
+.mod-floor .mod-body .pro {
+	height: 86px; overflow: hidden; margin-top: 4px;
+}
+.mod-floor .mod-body .pro img {
+	vertical-align: middle;
+}
+.mod-floor .mod-body .pro .item {
+	overflow: hidden; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; float: left;
+}
+.mod-floor .mod-body .pro .w1 {
+	width: 248px;
+}
+.mod-floor .mod-body .pro .w1 img {
+	width: 248px;
+}
+.mod-floor .mod-body .pro .w2 {
+	width: 247px;
+}
+.mod-floor .mod-body .pro .summary {
+	height: 19px; line-height: 17px;
+}
+.mod-floor .mod-body .pro .summary span {
+	padding-left: 12px; float: left;
+}
+.mod-floor .mod-body .pro .summary em {
+	padding-right: 12px; font-weight: bold; float: right;
+}
+.mod-floor .mod-body .sub-category {
+	border-width: 0px 0px 1px 1px; border-style: none none solid solid; border-color: currentColor currentColor rgb(213, 211, 199) rgb(213, 211, 199); padding: 0px 3px; width: 192px; height: 106px; overflow: hidden; float: left; background-color: rgb(240, 239, 230);
+}
+.mod-floor .mod-body .sub-category h5 {
+	height: 29px; color: rgb(99, 87, 76); line-height: 29px; padding-left: 7px; font-size: 14px; font-weight: bold; margin-bottom: 4px; border-bottom-color: rgb(213, 211, 199); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.mod-floor .mod-body .sub-category li {
+	margin: 4px 0px; padding: 0px 6px; height: 15px; line-height: 15px; overflow: hidden; border-left-color: rgb(99, 87, 76); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.mod-floor .mod-body .sub-category li.first {
+	clear: both; border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.mod-floor .mod-body .brand {
+	border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: currentColor rgb(213, 211, 199) rgb(213, 211, 199) currentColor; width: 790px; height: 106px; overflow: hidden; float: left; background-color: rgb(248, 247, 243);
+}
+.mod-floor .mod-body .brand li {
+	padding: 8px 4px 8px 8px; width: 246px; height: 90px; border-left-color: rgb(213, 211, 199); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.mod-floor .mod-body .brand .pic {
+	width: 92px; height: 92px; float: left; position: relative;
+}
+.mod-floor .mod-body .brand .pic .mask {
+	left: 0px; top: 0px; width: 92px; height: 92px; display: none; filter: alpha(opacity=70); position: absolute; opacity: 0.7; background-color: rgb(0, 0, 0); -moz-opacity: .7;
+}
+.mod-floor .mod-body .brand .pic .txt {
+	left: 0px; top: 0px; width: 92px; height: 92px; text-align: center; color: rgb(255, 255, 255); font-size: 12px; display: none; position: absolute; z-index: 1; cursor: pointer;
+}
+.mod-floor .mod-body .brand .pic em {
+	width: 92px; padding-top: 26px; font-family: arial; font-size: 14px; font-weight: bold; display: block;
+}
+.mod-floor .mod-body .brand .pic em {
+	text-decoration: none;
+}
+.mod-floor .mod-body .brand .pic span {
+	text-decoration: none;
+}
+.mod-floor .mod-body .brand .pic-hover .mask {
+	display: block;
+}
+.mod-floor .mod-body .brand .pic-hover .txt {
+	display: block;
+}
+.mod-floor .mod-body .brand .pic a {
+	border: 1px solid rgb(213, 211, 199); width: 90px; height: 90px; display: block;
+}
+.mod-floor .mod-body .brand .pic img {
+	border: 0px currentColor; display: block;
+}
+.mod-floor .mod-body .brand h5 {
+	width: 149px; height: 28px; line-height: 28px; overflow: hidden; font-weight: bold; margin-bottom: 3px; margin-left: 4px; border-bottom-color: rgb(228, 228, 228); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+.mod-floor .mod-body .brand h5 a:link {
+	color: rgb(99, 87, 76); text-decoration: none;
+}
+.mod-floor .mod-body .brand h5 a:visited {
+	color: rgb(99, 87, 76); text-decoration: none;
+}
+.mod-floor .mod-body .brand h5 a:hover {
+	text-decoration: underline;
+}
+.mod-floor .mod-body .brand h5 a.red:link {
+	color: rgb(204, 0, 0);
+}
+.mod-floor .mod-body .brand h5 a.red:visited {
+	color: rgb(204, 0, 0);
+}
+.mod-floor .mod-body .brand h5 span {
+	margin: 0px 4px 0px 6px; padding: 0px 3px; border: 1px solid rgb(98, 41, 47); height: 16px; color: rgb(255, 255, 255); line-height: 15px; text-decoration: none; display: inline-block; cursor: pointer; background-color: rgb(121, 46, 0);
+}
+.mod-floor .mod-body .brand p {
+	width: 144px; height: 20px; color: rgb(163, 149, 136); line-height: 20px; overflow: hidden; padding-left: 8px; float: left;
+}
+.mod-floor .mod-body .brand p.desc {
+	color: rgb(99, 87, 76);
+}
+.mod-floor-woman {
+	height: 500px;
+}
+.mod-floor-woman .mod-header h2 {
+	width: 200px;
+}
+.mod-floor-woman .mod-header h2 em {
+	color: rgb(109, 41, 0);
+}
+.mod-floor-woman .mod-header .tag-list {
+	margin-left: 199px;
+}
+.mod-floor-woman .mod-body {
+	position: relative;
+}
+.mod-floor-woman .mod-body .big-pic {
+	left: 1px; top: 0px; width: 198px; height: 348px; overflow: hidden; border-right-color: rgb(213, 211, 199); border-right-width: 1px; border-right-style: solid; position: absolute;
+}
+.mod-floor-woman .mod-body .f-tab-b {
+	width: 787px; margin-left: 200px; float: left; display: none; _margin-left: 100px;
+}
+.mod-floor-woman .mod-body .items .tags-wrap {
+	margin-left: 0px;
+}
+.mod-floor-woman .mod-body .f-tab-b .shopwindow {
+	display: none;
+}
+.mod-floor-woman .mod-body {
+	height: 460px;
+}
+.mod-floor-woman .mod-body .items {
+	border-color: rgb(213, 211, 199);
+}
+.mod-floor-children .mod-header h2 {
+	background-position: 0px -60px;
+}
+.mod-floor-children .mod-header h2 em {
+	color: rgb(43, 88, 0);
+}
+.mod-floor-man .mod-header h2 {
+	background-position: 0px -120px;
+}
+.mod-floor-man .mod-header h2 em {
+	color: rgb(8, 60, 100);
+}
+.mod-floor-underwear .mod-header h2 {
+	background-position: 0px -180px;
+}
+.mod-floor-underwear .mod-header h2 em {
+	color: rgb(83, 59, 109);
+}
+.mod-floor-shoes .mod-header h2 {
+	background-position: 0px -240px;
+}
+.mod-floor-shoes .mod-header h2 em {
+	color: rgb(132, 52, 98);
+}
+.mod-floor-bags .mod-header h2 {
+	background-position: 0px -300px;
+}
+.mod-floor-bags .mod-header h2 em {
+	color: rgb(112, 98, 21);
+}
+.mod-floor-ornament .mod-header h2 {
+	background-position: 0px -360px;
+}
+.mod-floor-ornament .mod-header h2 em {
+	color: rgb(41, 92, 101);
+}
+.mod-floor-sport .mod-header h2 {
+	background-position: 0px -420px;
+}
+.mod-floor-sport .mod-header h2 em {
+	color: rgb(129, 32, 31);
+}
+.mod-tabao-hot-goods {
+	width: 100%; height: 328px; margin-top: 28px;
+}
+.mod-tabao-hot-goods .mod-header {
+	background: url("floor.png") repeat-x 0px 0px rgb(132, 109, 80); height: 40px; border-right-color: rgb(132, 109, 80); border-right-width: 1px; border-right-style: solid; position: relative;
+}
+.mod-tabao-hot-goods .mod-header h2 {
+	background: url("floor.png") no-repeat 0px 0px; left: 0px; top: 0px; width: 200px; height: 40px; display: block; position: absolute;
+}
+.mod-tabao-hot-goods .mod-header h2 em {
+	left: 86px; top: 9px; color: rgb(255, 255, 255); font-size: 14px; position: absolute;
+}
+.mod-tabao-hot-goods .mod-header .tag-list {
+	height: 40px; margin-left: 200px; float: left; display: inline-block; _display: inline;
+}
+.mod-tabao-hot-goods .mod-header .tag-list li {
+	width: 100px; height: 38px; text-align: center; line-height: 40px; overflow: hidden; margin-top: 1px; border-left-color: rgb(206, 196, 178); border-left-width: 1px; border-left-style: solid; float: left; display: inline-block; background-color: rgb(231, 229, 215);
+}
+.mod-tabao-hot-goods .mod-header .tag-list li a {
+	width: 100%; height: 100%; display: block;
+}
+.mod-tabao-hot-goods .mod-header .tag-list li.last {
+	border-right-color: rgb(132, 109, 80); border-right-width: 1px; border-right-style: solid;
+}
+.mod-tabao-hot-goods .mod-header .tag-list li.current {
+	height: 39px; color: rgb(99, 87, 76); font-size: 14px; font-weight: bold; margin-top: 1px; margin-right: -1px; border-right-color: rgb(132, 109, 80); border-left-color: rgb(132, 109, 80); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; position: relative; background-color: rgb(255, 255, 255);
+}
+.mod-tabao-hot-goods .mod-header .tag-list a:link {
+	color: rgb(99, 87, 76); text-decoration: none;
+}
+.mod-tabao-hot-goods .mod-header .tag-list a:visited {
+	color: rgb(99, 87, 76); text-decoration: none;
+}
+.mod-tabao-hot-goods .mod-header .tag-list a:hover {
+	color: rgb(99, 87, 76) !important; text-decoration: underline;
+}
+.mod-tabao-hot-goods .mod-header .more {
+	margin-right: 14px; float: right; _display: inline;
+}
+.mod-tabao-hot-goods .mod-body {
+	width: 990px; height: 289px; overflow: hidden;
+}
+.mod-tabao-hot-goods .mod-body .items {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(236, 235, 230) rgb(236, 235, 230); height: 287px;
+}
+.mod-tabao-hot-goods .mod-body .f-tab-b {
+	width: 988px; height: 287px;
+}
+.mod-tabao-hot-goods .mod-body .goods-list {
+	padding-top: 12px; padding-left: 2px;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods {
+	padding: 7px 24px 0px; width: 148px; height: 263px; margin-left: 0px; border-right-color: rgb(242, 241, 235); border-right-width: 1px; border-right-style: solid; float: left; position: relative; min-height: 263px; _display: inline;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .pic {
+	width: 150px; height: 150px;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods h4 {
+	height: 27px; line-height: 27px; overflow: hidden; font-weight: normal;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods-last {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .price {
+	color: rgb(136, 136, 136);
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .sale-count {
+	color: rgb(136, 136, 136);
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .buy2 {
+	color: rgb(136, 136, 136);
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods em {
+	color: rgb(68, 68, 68); font-weight: bold;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .cny {
+	color: rgb(204, 0, 0); font-family: Helvetica; font-size: 10px;
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .price em {
+	color: rgb(204, 0, 0);
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .mod-type {
+	padding: 1px 1px 1px 6px; width: 116px; height: 15px; color: rgb(255, 255, 255); line-height: 15px; overflow: hidden; margin-top: 4px; background-color: rgb(130, 120, 112);
+}
+.mod-tabao-hot-goods .mod-body .goods-list .goods .mod-type span {
+	width: 63px; height: 14px; text-align: center; color: rgb(130, 120, 112); overflow: hidden; padding-top: 1px; vertical-align: middle; float: right; display: block; background-color: rgb(245, 241, 236);
+}
+.mod-company {
+	width: 100%; margin-top: 23px;
+}
+.mod-company::after {
+	height: 0px; overflow: hidden; clear: both; content: "";
+}
+.mod-company .mod-header {
+	height: 28px; line-height: 28px; overflow: hidden;
+}
+.mod-company .mod-header h3 {
+	width: 96px; color: rgb(93, 76, 59); padding-left: 4px; font-size: 18px; font-weight: bold; float: left; display: block;
+}
+.mod-company .mod-header span {
+	float: left;
+}
+.mod-company .mod-header span em {
+	padding: 4px; color: rgb(204, 0, 0); font-family: Tahoma; font-size: 14px;
+}
+.mod-company .mod-header .more {
+	width: 130px; height: 28px; overflow: hidden; float: right;
+}
+.mod-company .mod-header .more a {
+	background-position: right 7px; height: 28px; color: rgb(99, 87, 76) !important; padding-right: 20px; margin-right: 14px; display: block;
+}
+.mod-company .category-list {
+	height: 30px; font-size: 14px;
+}
+.mod-company .category-list li {
+	width: 122px; height: 27px; text-align: center; line-height: 27px; overflow: hidden; border-top-color: rgb(206, 200, 195); border-right-color: rgb(206, 200, 195); border-bottom-color: rgb(206, 200, 195); border-top-width: 2px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; float: left; background-color: rgb(247, 243, 239);
+}
+.mod-company .category-list li.first {
+	width: 127px; border-left-color: rgb(206, 200, 195); border-left-width: 1px; border-left-style: solid;
+}
+.mod-company .category-list li.current {
+	height: 28px; font-weight: bold; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; background-color: rgb(255, 255, 255);
+}
+.mod-company .category-list li a {
+	width: 100%; height: 100%; color: rgb(93, 76, 59); display: block;
+}
+.mod-company .category-list li a:hover {
+	color: rgb(93, 76, 59) !important;
+}
+.mod-company .shops {
+	width: 100%; overflow: hidden; margin-top: 10px;
+}
+.mod-company .shops .f-tab-b {
+	width: 990px; height: 282px; overflow: hidden;
+}
+.mod-company .supplier-big {
+	margin: 8px 15px 0px 0px; border: 1px solid rgb(228, 226, 222); width: 318px; overflow: hidden; float: left;
+}
+.mod-company .supplier-small {
+	margin: 8px 15px 0px 0px; border: 1px solid rgb(228, 226, 222); width: 318px; overflow: hidden; float: left;
+}
+.mod-company .supplier-big {
+	height: 268px;
+}
+.mod-company .supplier-small {
+	height: 129px;
+}
+.mod-company .fixed {
+	margin-right: 0px;
+}
+.mod-company .supplier-big .supplier-header {
+	padding: 0px 8px; height: 34px; line-height: 34px; background-color: rgb(248, 244, 238);
+}
+.mod-company .supplier-small .supplier-header {
+	padding: 0px 8px; height: 34px; line-height: 34px; background-color: rgb(248, 244, 238);
+}
+.mod-company .supplier-big .supplier-header h6.title {
+	font-size: 14px; font-weight: 700; float: left;
+}
+.mod-company .supplier-small .supplier-header h6.title {
+	font-size: 14px; font-weight: 700; float: left;
+}
+.mod-company .supplier-content {
+	padding: 8px;
+}
+.mod-company .supplier-big .supplier-info {
+	width: 302px; margin-bottom: 8px; float: left;
+}
+.mod-company .supplier-small .supplier-info {
+	width: 132px; float: left;
+}
+.mod-company .supplier-info dd {
+	height: 20px; line-height: 20px; overflow: hidden; white-space: nowrap; word-break: keep-all;
+}
+.mod-company .supplier-big .supplier-info dd {
+	width: 151px; float: left;
+}
+.mod-company .supplier-small .supplier-info dd {
+	width: 132px;
+}
+.mod-company .supplier-big .supplier-active dt {
+	height: 26px; text-align: center; color: rgb(255, 255, 255); line-height: 26px; float: left; background-color: rgb(120, 101, 82);
+}
+.mod-company .supplier-active dd {
+	height: 26px; text-align: center; color: rgb(255, 255, 255); line-height: 26px; float: left; background-color: rgb(120, 101, 82);
+}
+.mod-company .supplier-big .supplier-active dt {
+	width: 72px; margin-right: 2px;
+}
+.mod-company .supplier-big .supplier-active dd {
+	width: 228px;
+}
+.mod-company .supplier-big .supplier-active a {
+	color: rgb(255, 255, 255) !important; text-decoration: none !important;
+}
+.mod-company .supplier-big .supplier-active a:hover {
+	color: rgb(255, 115, 0) !important;
+}
+.mod-company .supplier-big .tag-list {
+	margin-top: 10px;
+}
+.mod-company .supplier-big .tag-list li {
+	margin-right: 10px; float: left;
+}
+.mod-company .supplier-big .tag-list li a {
+	border: 1px solid rgb(228, 226, 222); width: 66px; height: 22px; text-align: center; line-height: 22px; display: inline-block; background-color: rgb(248, 244, 238);
+}
+.mod-company .supplier-big .tag-list li a:hover {
+	border-color: rgb(120, 101, 82); text-decoration: none;
+}
+.mod-company .supplier-big .supplier-good {
+	margin-top: 10px;
+}
+.mod-company .supplier-good dd {
+	float: left;
+}
+.mod-company ul.list-product {
+	float: left;
+}
+.mod-company ul.list-product li {
+	width: 80px; height: 80px; line-height: 0; overflow: hidden; font-size: 0px; float: left; display: inline;
+}
+.mod-company .supplier-big ul.list-product li.item-1st {
+	margin-left: 0px;
+}
+.mod-company .supplier-small ul.list-product li.item-1st {
+	margin-left: 0px;
+}
+.mod-company ul.list-product li img {
+	width: 80px; height: 80px;
+}
+.mod-company .supplier-big ul.list-product li {
+	margin-left: 14px;
+}
+.mod-company .supplier-small ul.list-product li {
+	margin-left: 10px;
+}
+.mod-company dd.medal span.title {
+	float: left;
+}
+.mod-company dd.medal span.medal-icon {
+	width: 90px; height: 20px; float: left;
+}
+.mod-company span.num {
+	color: rgb(204, 0, 0); font-weight: 300;
+}
+.section-sns {
+	margin-top: 12px;
+}
+.section-sns {
+	margin-bottom: 30px;
+}
+.section-sns .header {
+	padding: 0px 6px; height: 30px; line-height: 30px; margin-bottom: 16px; border-top-color: currentColor !important; border-bottom-color: rgb(204, 204, 204); border-top-width: medium !important; border-bottom-width: 2px; border-top-style: none !important; border-bottom-style: solid; background-color: rgb(255, 255, 255) !important;
+}
+.section-sns .header h3.title {
+	width: 194px; color: rgb(51, 51, 51); font-size: 18px; font-weight: 700; float: left;
+}
+.section-sns .header p {
+	padding: 0px 6px 0px 14px; color: rgb(136, 136, 136); float: left;
+}
+.section-sns .header p span.num {
+	color: rgb(204, 0, 0); font-family: Tahoma; font-weight: 700;
+}
+.section-sns .header a.more {
+	margin: 0px !important; color: rgb(51, 51, 51); font-weight: 300;
+}
+.section-sns .header div.solid {
+	margin: 10px 0px 0px 14px; height: 10px; color: rgb(204, 204, 204); line-height: 10px; display: inline-block;
+}
+.mod-headline div.pic {
+	width: 200px; height: 80px; overflow: hidden; margin-bottom: 6px;
+}
+.mod-headline h5.title {
+	height: 24px; line-height: 24px; overflow: hidden; font-weight: 700;
+}
+.mod-headline p.intro {
+	height: 48px; color: rgb(51, 51, 51); line-height: 24px; overflow: hidden;
+}
+.mod-headline p.intro {
+	position: relative;
+}
+.mod-news dd.intro {
+	position: relative;
+}
+.mod-headline p.intro a.more {
+	right: 0px; bottom: 4px; line-height: 18px; position: absolute;
+}
+.mod-news dd.intro a.more {
+	right: 0px; bottom: 4px; line-height: 18px; position: absolute;
+}
+.mod-headline p.intro a.more {
+	right: 0px;
+}
+.mod-news dd.intro a.more {
+	right: 3px;
+}
+.mod-news {
+	height: 166px; overflow: hidden; border-right-color: rgb(204, 204, 204); border-left-color: rgb(237, 230, 224); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: dotted;
+}
+.mod-news .news-left {
+	padding: 0px 10px; width: 242px; overflow: hidden; float: left;
+}
+.mod-news .news-right {
+	padding: 0px 10px; width: 242px; overflow: hidden; float: left;
+}
+.mod-news .news-left {
+	border-right-color: rgb(237, 230, 224); border-right-width: 1px; border-right-style: dotted;
+}
+.mod-news dl {
+	width: 254px; height: 80px; overflow: hidden; padding-bottom: 6px;
+}
+.mod-news dt {
+	width: 80px; height: 80px; padding-right: 8px; float: left;
+}
+.mod-news dd {
+	width: 152px; height: 48px; color: rgb(68, 68, 68); line-height: 24px; overflow: hidden; float: left;
+}
+.mod-news dd.title {
+	height: 24px;
+}
+.mod-news dd.title a {
+	font-weight: 700;
+}
+.mod-news li {
+	height: 28px; line-height: 28px; overflow: hidden;
+}
+.mod-news li h6 {
+	color: rgb(136, 136, 136); padding-right: 8px; float: left;
+}
+.mod-news li a {
+	color: rgb(68, 68, 68);
+}
+.mod-top .cell-header {
+	height: 22px; overflow: hidden; margin-bottom: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.mod-top .cell-header h5 {
+	color: rgb(51, 51, 51); font-weight: bold;
+}
+.mod-top span.num {
+	color: rgb(204, 0, 0); font-weight: 700;
+}
+.mod-top dt {
+	padding: 0px 10px 0px 24px; width: 166px; height: 28px; line-height: 28px; overflow: hidden; float: left; position: relative;
+}
+.mod-top dd {
+	width: 40px; height: 28px; text-align: right; color: rgb(204, 0, 0); line-height: 28px; overflow: hidden; float: right;
+}
+.mod-top dt span.icon {
+	left: 0px; top: 7px; width: 24px; height: 15px; display: inline-block; position: absolute;
+}
+.mod-top dt.item-1st span.icon {
+	
+}
+.mod-top dt.item-2nd span.icon {
+	background-position: 0px -30px;
+}
+.mod-top dt.item-3rd span.icon {
+	background-position: 0px -60px;
+}
+.mod-top dt.item-4th span.icon {
+	background-position: 0px -90px;
+}
+.mod-top dt.item-5th span.icon {
+	background-position: 0px -120px;
+}
+.section-tag {
+	margin-bottom: 24px;
+}
+.mod-cate-tag {
+	border-top-color: rgb(204, 204, 204); border-top-width: 2px; border-top-style: solid;
+}
+.mod-cate-tag a:link {
+	color: rgb(51, 51, 51);
+}
+.mod-cate-tag a:visited {
+	color: rgb(51, 51, 51);
+}
+.mod-cate-tag a:hover {
+	color: rgb(255, 115, 0);
+}
+.mod-cate-tag a:active {
+	color: rgb(255, 115, 0);
+}
+.mod-cate-tag li {
+	padding: 0px 13px; width: 114px; border-right-color: rgb(235, 235, 235); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.mod-cate-tag li.last-col {
+	padding-right: 0px !important; margin-right: 0px !important; border-right-color: currentColor !important; border-right-width: 0px !important; border-right-style: none !important;
+}
+.mod-cate-tag dl.cell-tags {
+	width: 114px; overflow: hidden;
+}
+.mod-cate-tag dd.description {
+	height: 32px; text-align: center; line-height: 32px; margin-top: 14px; float: none;
+}
+.mod-cate-tag dd.description a {
+	padding: 0px; color: rgb(51, 51, 51); font-size: 14px; font-weight: 700; float: none; display: inline;
+}
+.mod-cate-tag dt {
+	width: 114px; height: 60px; overflow: hidden; padding-bottom: 12px; margin-bottom: 8px; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.mod-cate-tag dt img {
+	width: 60px; height: 60px;
+}
+.mod-cate-tag dd {
+	height: 24px; color: rgb(204, 204, 204); line-height: 24px; overflow: hidden; float: left;
+}
+.mod-cate-tag dd a {
+	margin: 0px 2px 0px 7px; width: 40px; overflow: hidden; float: left; display: inline;
+}
+.mod-cate-tag .vertical-img {
+	text-align: center; overflow: hidden; font-size: 0px; display: table;
+}
+.mod-cate-tag .vertical-img .box-img {
+	vertical-align: middle; display: table-cell;
+}
+.mod-cate-tag .vertical-img img {
+	vertical-align: middle;
+}

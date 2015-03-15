@@ -1,0 +1,1507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E02416B0-33B8-481C-93D4-5CF1131B55C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ErpCore</RootNamespace>
+    <AssemblyName>ErpCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <StartupObject>ErpCore.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>http://localhost/ErpCore/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>E:\数据库\mysql5.0\连接驱动\mysql-connector-net-5.0.8.1-noinstall\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\BinaryCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\BinaryCtrl.Designer.cs">
+      <DependentUpon>BinaryCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ExCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ExCheckBox.Designer.cs">
+      <DependentUpon>ExCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ExComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ExComboBox.Designer.cs">
+      <DependentUpon>ExComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ExDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ExDateTimePicker.Designer.cs">
+      <DependentUpon>ExDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ExNumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ExNumericUpDown.Designer.cs">
+      <DependentUpon>ExNumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\IColumnCtrl.cs" />
+    <Compile Include="CommonCtrl\MasterDetailViewGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\MasterDetailViewGrid.Designer.cs">
+      <DependentUpon>MasterDetailViewGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\NavigateBarButtonCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\NavigateBarButtonCtrl.Designer.cs">
+      <DependentUpon>NavigateBarButtonCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\NavigateBarCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\NavigateBarCtrl.Designer.cs">
+      <DependentUpon>NavigateBarCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\RecordCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\RecordCtrl.Designer.cs">
+      <DependentUpon>RecordCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ExTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ExTextBox.Designer.cs">
+      <DependentUpon>ExTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\TableGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\TableGrid.Designer.cs">
+      <DependentUpon>TableGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTab.Designer.cs">
+      <DependentUpon>TableTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTree.Designer.cs">
+      <DependentUpon>TableTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UIComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UIComboBox.Designer.cs">
+      <DependentUpon>UIComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UILabelF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UILabelF.Designer.cs">
+      <DependentUpon>UILabelF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UIListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UIListBox.Designer.cs">
+      <DependentUpon>UIListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UITextBoxF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UITextBoxF.Designer.cs">
+      <DependentUpon>UITextBoxF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UIToolbarButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UIToolbarButton.Designer.cs">
+      <DependentUpon>UIToolbarButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UIToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UIToolbar.Designer.cs">
+      <DependentUpon>UIToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\IWindowCtrl.cs" />
+    <Compile Include="CommonCtrl\TableGridF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\TableGridF.Designer.cs">
+      <DependentUpon>TableGridF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTabF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTabF.Designer.cs">
+      <DependentUpon>TableTabF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTreeF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\TableTreeF.Designer.cs">
+      <DependentUpon>TableTreeF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UIComboBoxF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UIComboBoxF.Designer.cs">
+      <DependentUpon>UIComboBoxF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\UIListBoxF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\UIListBoxF.Designer.cs">
+      <DependentUpon>UIListBoxF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewRecordCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewRecordCtrl.Designer.cs">
+      <DependentUpon>ViewRecordCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewGrid.Designer.cs">
+      <DependentUpon>ViewGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewTab.Designer.cs">
+      <DependentUpon>ViewTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewDetailGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewDetailGrid.Designer.cs">
+      <DependentUpon>ViewDetailGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\MultMasterDetailViewGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\MultMasterDetailViewGrid.Designer.cs">
+      <DependentUpon>MultMasterDetailViewGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\MasterDetailViewRecordCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\MasterDetailViewRecordCtrl.Designer.cs">
+      <DependentUpon>MasterDetailViewRecordCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\MultMasterDetailViewRecordCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\MultMasterDetailViewRecordCtrl.Designer.cs">
+      <DependentUpon>MultMasterDetailViewRecordCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\PathCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\PathCtrl.Designer.cs">
+      <DependentUpon>PathCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewDetailRecordCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonCtrl\ViewDetailRecordCtrl.Designer.cs">
+      <DependentUpon>ViewDetailRecordCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CVariable.cs" />
+    <Compile Include="Common\InputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\InputForm.Designer.cs">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\VariableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\VariableForm.Designer.cs">
+      <DependentUpon>VariableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Diagram\AddTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Diagram\AddTableForm.Designer.cs">
+      <DependentUpon>AddTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Diagram\DesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Diagram\DesignerForm.Designer.cs">
+      <DependentUpon>DesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Diagram\DiagramInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Diagram\DiagramInfoForm.Designer.cs">
+      <DependentUpon>DiagramInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Diagram\DiagramPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Database\Diagram\DiagramPanel.Designer.cs">
+      <DependentUpon>DiagramPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Diagram\SelDiagramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Diagram\SelDiagramForm.Designer.cs">
+      <DependentUpon>SelDiagramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Diagram\TableBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Database\Diagram\TableBox.Designer.cs">
+      <DependentUpon>TableBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\AddPrefixForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\AddPrefixForm.Designer.cs">
+      <DependentUpon>AddPrefixForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\ColPropertySetting.cs" />
+    <Compile Include="Database\Table\DataServerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\DataServerListForm.Designer.cs">
+      <DependentUpon>DataServerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\MakeModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\MakeModelForm.Designer.cs">
+      <DependentUpon>MakeModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\PropertyGridComboBoxItem.cs" />
+    <Compile Include="Database\Table\PropertyGridSelTableItem.cs" />
+    <Compile Include="Database\Table\SelTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\SelTableForm.Designer.cs">
+      <DependentUpon>SelTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\DataServerInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\DataServerInfoForm.Designer.cs">
+      <DependentUpon>DataServerInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\TableInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\TableInfoForm.Designer.cs">
+      <DependentUpon>TableInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\TablePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Database\Table\TablePanel.Designer.cs">
+      <DependentUpon>TablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\SelMultTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\SelMultTableForm.Designer.cs">
+      <DependentUpon>SelMultTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\SelColumnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\Table\SelColumnForm.Designer.cs">
+      <DependentUpon>SelColumnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Table\PropertyGridEnumItem.cs" />
+    <Compile Include="Common\DataItem.cs" />
+    <Compile Include="DbSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbSetup.Designer.cs">
+      <DependentUpon>DbSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\AddDesktopApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop\AddDesktopApp.Designer.cs">
+      <DependentUpon>AddDesktopApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\DesktopPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop\DesktopPanel.Designer.cs">
+      <DependentUpon>DesktopPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\DesktopItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktop\DesktopItem.Designer.cs">
+      <DependentUpon>DesktopItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\SelIconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop\SelIconForm.Designer.cs">
+      <DependentUpon>SelIconForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\IconItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktop\IconItem.Designer.cs">
+      <DependentUpon>IconItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\SelBgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop\SelBgForm.Designer.cs">
+      <DependentUpon>SelBgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\AttributeToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\AttributeToolWindow.Designer.cs">
+      <DependentUpon>AttributeToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ChildenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ChildenForm.Designer.cs">
+      <DependentUpon>ChildenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ChildenFormProp.cs" />
+    <Compile Include="FormF\Designer\ControlToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ControlToolWindow.Designer.cs">
+      <DependentUpon>ControlToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ExCheckBoxEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ExCheckBoxEl.Designer.cs">
+      <DependentUpon>ExCheckBoxEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ExComboBoxEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ExComboBoxEl.Designer.cs">
+      <DependentUpon>ExComboBoxEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ExDateTimePickerEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ExDateTimePickerEl.Designer.cs">
+      <DependentUpon>ExDateTimePickerEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ExNumericUpDownEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ExNumericUpDownEl.Designer.cs">
+      <DependentUpon>ExNumericUpDownEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\ExTextBoxEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\ExTextBoxEl.Designer.cs">
+      <DependentUpon>ExTextBoxEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\LayoutFormDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\LayoutFormDesigner.Designer.cs">
+      <DependentUpon>LayoutFormDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\TableGridFEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\TableGridFEl.Designer.cs">
+      <DependentUpon>TableGridFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\TableGridFProp.cs" />
+    <Compile Include="FormF\Designer\TableTabFEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTabFEl.Designer.cs">
+      <DependentUpon>TableTabFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTabFProp.cs" />
+    <Compile Include="FormF\Designer\TableTreeFEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTreeFEl.Designer.cs">
+      <DependentUpon>TableTreeFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTreeFProp.cs" />
+    <Compile Include="FormF\Designer\TableTreeNodeSetF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTreeNodeSetF.Designer.cs">
+      <DependentUpon>TableTreeNodeSetF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTreeSetF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\TableTreeSetF.Designer.cs">
+      <DependentUpon>TableTreeSetF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\UIComboBoxFEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\UIComboBoxFEl.Designer.cs">
+      <DependentUpon>UIComboBoxFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\UIComboBoxFProp.cs" />
+    <Compile Include="FormF\Designer\UILabelFEl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\UILabelFEl.Designer.cs">
+      <DependentUpon>UILabelFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\UIListBoxFEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\UIListBoxFEl.Designer.cs">
+      <DependentUpon>UIListBoxFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\UIListBoxFProp.cs" />
+    <Compile Include="FormF\Designer\UITextBoxFEl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormF\Designer\UITextBoxFEl.Designer.cs">
+      <DependentUpon>UITextBoxFEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\Designer\UITextBoxFProp.cs" />
+    <Compile Include="FormF\Designer\UILabelFProp.cs" />
+    <Compile Include="FormF\Designer\ExTextBoxProp.cs" />
+    <Compile Include="FormF\Designer\ExCheckBoxProp.cs" />
+    <Compile Include="FormF\Designer\ExComboBoxProp.cs" />
+    <Compile Include="FormF\Designer\ExDateTimePickerProp.cs" />
+    <Compile Include="FormF\Designer\ExNumericUpDownProp.cs" />
+    <Compile Include="FormF\Designer\ExStringBoxProp.cs" />
+    <Compile Include="FormF\Designer\ExNumericBoxProp.cs" />
+    <Compile Include="FormF\FormPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormF\FormPanel.Designer.cs">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormF\LayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormF\LayoutForm.Designer.cs">
+      <DependentUpon>LayoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuInfo.Designer.cs">
+      <DependentUpon>MenuInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuPanel.Designer.cs">
+      <DependentUpon>MenuPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\BinaryCtrl.resx">
+      <DependentUpon>BinaryCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ExCheckBox.resx">
+      <DependentUpon>ExCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ExComboBox.resx">
+      <DependentUpon>ExComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ExDateTimePicker.resx">
+      <DependentUpon>ExDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ExNumericUpDown.resx">
+      <DependentUpon>ExNumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ExTextBox.resx">
+      <DependentUpon>ExTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\MasterDetailViewGrid.resx">
+      <DependentUpon>MasterDetailViewGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\NavigateBarButtonCtrl.resx">
+      <DependentUpon>NavigateBarButtonCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\NavigateBarCtrl.resx">
+      <DependentUpon>NavigateBarCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\RecordCtrl.resx">
+      <DependentUpon>RecordCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\TableGrid.resx">
+      <DependentUpon>TableGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\TableTab.resx">
+      <DependentUpon>TableTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\TableTree.resx">
+      <DependentUpon>TableTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\UIComboBox.resx">
+      <DependentUpon>UIComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\UIListBox.resx">
+      <DependentUpon>UIListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\UIToolbar.resx">
+      <DependentUpon>UIToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\TableGridF.resx">
+      <DependentUpon>TableGridF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\TableTabF.resx">
+      <DependentUpon>TableTabF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\TableTreeF.resx">
+      <DependentUpon>TableTreeF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\UIComboBoxF.resx">
+      <DependentUpon>UIComboBoxF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\UIListBoxF.resx">
+      <DependentUpon>UIListBoxF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ViewRecordCtrl.resx">
+      <DependentUpon>ViewRecordCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ViewGrid.resx">
+      <DependentUpon>ViewGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ViewTab.resx">
+      <DependentUpon>ViewTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ViewDetailGrid.resx">
+      <DependentUpon>ViewDetailGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\MultMasterDetailViewGrid.resx">
+      <DependentUpon>MultMasterDetailViewGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\MasterDetailViewRecordCtrl.resx">
+      <DependentUpon>MasterDetailViewRecordCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\MultMasterDetailViewRecordCtrl.resx">
+      <DependentUpon>MultMasterDetailViewRecordCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\PathCtrl.resx">
+      <DependentUpon>PathCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonCtrl\ViewDetailRecordCtrl.resx">
+      <DependentUpon>ViewDetailRecordCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\InputForm.resx">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\VariableForm.resx">
+      <DependentUpon>VariableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Diagram\AddTableForm.resx">
+      <DependentUpon>AddTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Diagram\DesignerForm.resx">
+      <DependentUpon>DesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Diagram\DiagramInfoForm.resx">
+      <DependentUpon>DiagramInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Diagram\DiagramPanel.resx">
+      <DependentUpon>DiagramPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Diagram\SelDiagramForm.resx">
+      <DependentUpon>SelDiagramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Diagram\TableBox.resx">
+      <DependentUpon>TableBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\AddPrefixForm.resx">
+      <DependentUpon>AddPrefixForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\DataServerListForm.resx">
+      <DependentUpon>DataServerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\MakeModelForm.resx">
+      <DependentUpon>MakeModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\SelTableForm.resx">
+      <DependentUpon>SelTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\DataServerInfoForm.resx">
+      <DependentUpon>DataServerInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\TableInfoForm.resx">
+      <DependentUpon>TableInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\TablePanel.resx">
+      <DependentUpon>TablePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\SelMultTableForm.resx">
+      <DependentUpon>SelMultTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\Table\SelColumnForm.resx">
+      <DependentUpon>SelColumnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbSetup.resx">
+      <DependentUpon>DbSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\AddDesktopApp.resx">
+      <DependentUpon>AddDesktopApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\DesktopPanel.resx">
+      <DependentUpon>DesktopPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\DesktopItem.resx">
+      <DependentUpon>DesktopItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\SelIconForm.resx">
+      <DependentUpon>SelIconForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\IconItem.resx">
+      <DependentUpon>IconItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop\SelBgForm.resx">
+      <DependentUpon>SelBgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\AttributeToolWindow.resx">
+      <DependentUpon>AttributeToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ChildenForm.resx">
+      <DependentUpon>ChildenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ControlToolWindow.resx">
+      <DependentUpon>ControlToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ExCheckBoxEl.resx">
+      <DependentUpon>ExCheckBoxEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ExComboBoxEl.resx">
+      <DependentUpon>ExComboBoxEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ExDateTimePickerEl.resx">
+      <DependentUpon>ExDateTimePickerEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ExNumericUpDownEl.resx">
+      <DependentUpon>ExNumericUpDownEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\ExTextBoxEl.resx">
+      <DependentUpon>ExTextBoxEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\LayoutFormDesigner.resx">
+      <DependentUpon>LayoutFormDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\TableGridFEl.resx">
+      <DependentUpon>TableGridFEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\TableTabFEl.resx">
+      <DependentUpon>TableTabFEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\TableTreeFEl.resx">
+      <DependentUpon>TableTreeFEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\TableTreeNodeSetF.resx">
+      <DependentUpon>TableTreeNodeSetF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\TableTreeSetF.resx">
+      <DependentUpon>TableTreeSetF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\UIComboBoxFEl.resx">
+      <DependentUpon>UIComboBoxFEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\Designer\UIListBoxFEl.resx">
+      <DependentUpon>UIListBoxFEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\FormPanel.resx">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormF\LayoutForm.resx">
+      <DependentUpon>LayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuInfo.resx">
+      <DependentUpon>MenuInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuPanel.resx">
+      <DependentUpon>MenuPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportPanel.resx">
+      <DependentUpon>ReportPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportWizard.resx">
+      <DependentUpon>ReportWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RunReport.resx">
+      <DependentUpon>RunReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SelStatItem.resx">
+      <DependentUpon>SelStatItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Access\AccessPanel.resx">
+      <DependentUpon>AccessPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Org\OrgPanel.resx">
+      <DependentUpon>OrgPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Role\RolePanel.resx">
+      <DependentUpon>RolePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\User\UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSystem\SelSystemForm.resx">
+      <DependentUpon>SelSystemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSystem\SystemBox.resx">
+      <DependentUpon>SystemBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSystem\SubSystemPanel.resx">
+      <DependentUpon>SubSystemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterDetailViewInfo.resx">
+      <DependentUpon>MasterDetailViewInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SetDefaultVal.resx">
+      <DependentUpon>SetDefaultVal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SetTButton.resx">
+      <DependentUpon>SetTButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SetViewFilter.resx">
+      <DependentUpon>SetViewFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleViewRecord.resx">
+      <DependentUpon>SingleViewRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SelViewType.resx">
+      <DependentUpon>SelViewType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleView.resx">
+      <DependentUpon>SingleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewInfo.resx">
+      <DependentUpon>ViewInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewPanel.resx">
+      <DependentUpon>ViewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MultMasterDetailViewInfo.resx">
+      <DependentUpon>MultMasterDetailViewInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleViewInfo.resx">
+      <DependentUpon>SingleViewInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterDetailViewRecord.resx">
+      <DependentUpon>MasterDetailViewRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MasterDetailView.resx">
+      <DependentUpon>MasterDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MultMasterDetailView.resx">
+      <DependentUpon>MultMasterDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MultMasterDetailViewRecord.resx">
+      <DependentUpon>MultMasterDetailViewRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewDetailRecord.resx">
+      <DependentUpon>ViewDetailRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\SelDockPanel.resx">
+      <DependentUpon>SelDockPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\SelUIFormula.resx">
+      <DependentUpon>SelUIFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\TableTabEl.resx">
+      <DependentUpon>TableTabEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\TableTreeNodeSet.resx">
+      <DependentUpon>TableTreeNodeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\TableTreeSet.resx">
+      <DependentUpon>TableTreeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\TableTreeEl.resx">
+      <DependentUpon>TableTreeEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\UIComboBoxEl.resx">
+      <DependentUpon>UIComboBoxEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\UIListBoxEl.resx">
+      <DependentUpon>UIListBoxEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\UISizeDot.resx">
+      <DependentUpon>UISizeDot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\UIToolbarEl.resx">
+      <DependentUpon>UIToolbarEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\LayoutWindow.resx">
+      <DependentUpon>LayoutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\AttributeToolWindow.resx">
+      <DependentUpon>AttributeToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\ChildenWindow.resx">
+      <DependentUpon>ChildenWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\LayoutWindowDesigner.resx">
+      <DependentUpon>LayoutWindowDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\NavigateBarButtonEl.resx">
+      <DependentUpon>NavigateBarButtonEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\NavigateBarEl.resx">
+      <DependentUpon>NavigateBarEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\TableGridEl.resx">
+      <DependentUpon>TableGridEl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\RecordWindow.resx">
+      <DependentUpon>RecordWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Designer\ControlToolWindow.resx">
+      <DependentUpon>ControlToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\WindowPanel.resx">
+      <DependentUpon>WindowPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\TableWindow.resx">
+      <DependentUpon>TableWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\ActivesDefInfo.resx">
+      <DependentUpon>ActivesDefInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\ApprovalActives.resx">
+      <DependentUpon>ApprovalActives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\LinkInfo.resx">
+      <DependentUpon>LinkInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\SelWorkflowDef.resx">
+      <DependentUpon>SelWorkflowDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\ViewWorkflow.resx">
+      <DependentUpon>ViewWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\WorkflowDefInfo.resx">
+      <DependentUpon>WorkflowDefInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workflow\WorkflowDefPanel.resx">
+      <DependentUpon>WorkflowDefPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\ReportPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ReportPanel.Designer.cs">
+      <DependentUpon>ReportPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportWizard.Designer.cs">
+      <DependentUpon>ReportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RunReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RunReport.Designer.cs">
+      <DependentUpon>RunReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SelStatItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SelStatItem.Designer.cs">
+      <DependentUpon>SelStatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Access\AccessPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Access\AccessPanel.Designer.cs">
+      <DependentUpon>AccessPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Org\OrgPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Org\OrgPanel.Designer.cs">
+      <DependentUpon>OrgPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Role\RolePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Role\RolePanel.Designer.cs">
+      <DependentUpon>RolePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\User\UserPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\User\UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSystem\SelSystemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubSystem\SelSystemForm.Designer.cs">
+      <DependentUpon>SelSystemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSystem\SystemBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubSystem\SystemBox.Designer.cs">
+      <DependentUpon>SystemBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSystem\SubSystemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubSystem\SubSystemPanel.Designer.cs">
+      <DependentUpon>SubSystemPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TreeNodeTag.cs" />
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DESEncrypt.cs" />
+    <Compile Include="Util\CUtil.cs" />
+    <Compile Include="View\MasterDetailViewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MasterDetailViewInfo.Designer.cs">
+      <DependentUpon>MasterDetailViewInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SetDefaultVal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SetDefaultVal.Designer.cs">
+      <DependentUpon>SetDefaultVal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SetTButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SetTButton.Designer.cs">
+      <DependentUpon>SetTButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SetViewFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SetViewFilter.Designer.cs">
+      <DependentUpon>SetViewFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleViewRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SingleViewRecord.Designer.cs">
+      <DependentUpon>SingleViewRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SelViewType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SelViewType.Designer.cs">
+      <DependentUpon>SelViewType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SingleView.Designer.cs">
+      <DependentUpon>SingleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewInfo.Designer.cs">
+      <DependentUpon>ViewInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ViewPanel.Designer.cs">
+      <DependentUpon>ViewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MultMasterDetailViewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MultMasterDetailViewInfo.Designer.cs">
+      <DependentUpon>MultMasterDetailViewInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleViewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SingleViewInfo.Designer.cs">
+      <DependentUpon>SingleViewInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterDetailViewRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MasterDetailViewRecord.Designer.cs">
+      <DependentUpon>MasterDetailViewRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MasterDetailView.Designer.cs">
+      <DependentUpon>MasterDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MultMasterDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MultMasterDetailView.Designer.cs">
+      <DependentUpon>MultMasterDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MultMasterDetailViewRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MultMasterDetailViewRecord.Designer.cs">
+      <DependentUpon>MultMasterDetailViewRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewDetailRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewDetailRecord.Designer.cs">
+      <DependentUpon>ViewDetailRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\IDesignEl.cs" />
+    <Compile Include="Window\Designer\SelDockPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\SelDockPanel.Designer.cs">
+      <DependentUpon>SelDockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\SelUIFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\SelUIFormula.Designer.cs">
+      <DependentUpon>SelUIFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\TableTabEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\TableTabEl.Designer.cs">
+      <DependentUpon>TableTabEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\TableTreeNodeSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\TableTreeNodeSet.Designer.cs">
+      <DependentUpon>TableTreeNodeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\TableTreeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\TableTreeSet.Designer.cs">
+      <DependentUpon>TableTreeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\TableTreeEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\TableTreeEl.Designer.cs">
+      <DependentUpon>TableTreeEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\UIComboBoxEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\UIComboBoxEl.Designer.cs">
+      <DependentUpon>UIComboBoxEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\UIListBoxEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\UIListBoxEl.Designer.cs">
+      <DependentUpon>UIListBoxEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\UISizeDot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\UISizeDot.Designer.cs">
+      <DependentUpon>UISizeDot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\UIToolbarButtonEl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\UIToolbarButtonEl.Designer.cs">
+      <DependentUpon>UIToolbarButtonEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\UIToolbarEl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\UIToolbarEl.Designer.cs">
+      <DependentUpon>UIToolbarEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\UIToolbarProp.cs" />
+    <Compile Include="Window\Designer\TableTreeProp.cs" />
+    <Compile Include="Window\Designer\UIListBoxProp.cs" />
+    <Compile Include="Window\Designer\UIComboBoxProp.cs" />
+    <Compile Include="Window\Designer\TableTabProp.cs" />
+    <Compile Include="Window\Designer\ChildenWindowProp.cs" />
+    <Compile Include="Window\LayoutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\LayoutWindow.Designer.cs">
+      <DependentUpon>LayoutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\AttributeToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\AttributeToolWindow.Designer.cs">
+      <DependentUpon>AttributeToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\ChildenWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\ChildenWindow.Designer.cs">
+      <DependentUpon>ChildenWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\TableGridProp.cs" />
+    <Compile Include="Window\Designer\LayoutWindowDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\LayoutWindowDesigner.Designer.cs">
+      <DependentUpon>LayoutWindowDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\NavigateBarButtonEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\NavigateBarButtonEl.Designer.cs">
+      <DependentUpon>NavigateBarButtonEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\NavigateBarEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\NavigateBarEl.Designer.cs">
+      <DependentUpon>NavigateBarEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\TableGridEl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\TableGridEl.Designer.cs">
+      <DependentUpon>TableGridEl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\RecordWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\RecordWindow.Designer.cs">
+      <DependentUpon>RecordWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Designer\ControlToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Designer\ControlToolWindow.Designer.cs">
+      <DependentUpon>ControlToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\WindowPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Window\WindowPanel.Designer.cs">
+      <DependentUpon>WindowPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\TableWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\TableWindow.Designer.cs">
+      <DependentUpon>TableWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\ActivesDefInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\ActivesDefInfo.Designer.cs">
+      <DependentUpon>ActivesDefInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\ApprovalActives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\ApprovalActives.Designer.cs">
+      <DependentUpon>ApprovalActives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\LinkInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\LinkInfo.Designer.cs">
+      <DependentUpon>LinkInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\SelWorkflowDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\SelWorkflowDef.Designer.cs">
+      <DependentUpon>SelWorkflowDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\ViewWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\ViewWorkflow.Designer.cs">
+      <DependentUpon>ViewWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\WorkflowDefInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workflow\WorkflowDefInfo.Designer.cs">
+      <DependentUpon>WorkflowDefInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\WorkflowDefPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Workflow\WorkflowDefPanel.Designer.cs">
+      <DependentUpon>WorkflowDefPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\NEW.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\edit.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DELETE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\exit.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SAVE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\newtable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\removetable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\addtable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DLL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Toolbar_bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <None Include="bin\MenuIcon\default.png" />
+    <None Include="res\close.png" />
+    <None Include="res\approval.png" />
+    <None Include="res\cancelworkflow.png" />
+    <None Include="res\workflow.png" />
+    <None Include="res\run.png" />
+    <None Include="res\report.png" />
+    <None Include="app.config" />
+    <None Include="res\class.png" />
+    <None Include="res\panellayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ErpCoreModel.Invoicing\ErpCoreModel.Invoicing.csproj">
+      <Project>{58B98803-3774-442A-A421-73FF2027FFDD}</Project>
+      <Name>ErpCoreModel.Invoicing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ErpCoreModel.Store\ErpCoreModel.Store.csproj">
+      <Project>{E58D9750-678E-4A2E-B770-1EF1FD1FCD8A}</Project>
+      <Name>ErpCoreModel.Store</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\ErpCoreModel.csproj">
+      <Project>{D8B38CEF-0C6E-4D73-B673-A15FBB32AD5A}</Project>
+      <Name>ErpCoreModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExtendedPanel\ExtendedPanel.csproj">
+      <Project>{CE92FE1D-8F10-40C2-882E-85B820019D91}</Project>
+      <Name>ExtendedPanel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

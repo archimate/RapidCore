@@ -1,0 +1,159 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ViewPanel.aspx.cs" Inherits="View_ViewPanel" %>
+<%@ Import Namespace="ErpCoreModel" %>
+<%@ Import Namespace="ErpCoreModel.Base" %>
+<%@ Import Namespace="ErpCoreModel.Framework" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/ligerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <script src="../lib/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="../lib/ligerUI/js/core/base.js" type="text/javascript"></script>
+    <script src="../lib/ligerUI/js/plugins/ligerGrid.js" type="text/javascript"></script> 
+    <script src="../lib/ligerUI/js/plugins/ligerDialog.js" type="text/javascript"></script>
+    <script src="../lib/ligerUI/js/plugins/ligerMenu.js" type="text/javascript"></script>
+    <script src="../lib/ligerUI/js/plugins/ligerMenuBar.js" type="text/javascript"></script>
+    <script src="../lib/ligerUI/js/plugins/ligerToolBar.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#toptoolbar").ligerToolBar({ items: [
+                { text: '增加', click: onAdd, icon: 'add' },
+                { line: true },
+                { text: '修改', click: onEdit, icon: 'modify' },
+                { line: true },
+                { text: '删除', click: onDelete, icon: 'delete' },
+                { line: true },
+                { text: '按钮', click: onSetTButton },
+                { text: '默认值', click: onSetDefaultVal }
+            ]
+            });
+        });
+
+        //根据字段类型确定窗体宽度
+        var winWidth = 500;
+        var winHeight=350;
+        
+        function onAdd() {
+            $.ligerDialog.open({ title: '选择视图类型', url: 'SelViewType.aspx?catalog_id=<%=Request["catalog_id"] %>&B_Company_id=<%=Request["B_Company_id"] %>', name: 'winAddRec', height: winHeight, width: winWidth, modal: false,
+             isResize: true
+            });
+        }
+        function onEdit() {
+            var row = grid.getSelectedRow();
+            if (row == null) {
+                $.ligerDialog.alert('请选择行!');
+                return;
+            }
+            $.ligerDialog.open({ title: '修改', url: 'SelViewType.aspx?catalog_id=<%=Request["catalog_id"] %>&id=' + row.id + '&B_Company_id=<%=Request["B_Company_id"] %>', name: 'winEditRec', height: winHeight, width: winWidth, modal: false, 
+            isResize: true
+            });
+        }
+        function onDelete() {
+            var row = grid.getSelectedRow();
+            if (row == null) {
+                $.ligerDialog.alert('请选择行!');
+                return;
+            }
+            if (row.IsSystem=='True') {
+                $.ligerDialog.warn('系统表不能删除！');
+                return false;
+            }
+            $.ligerDialog.confirm('确认删除？', function(yes) {
+                if (yes) {
+                    $.post(
+                    'ViewPanel.aspx',
+                    {
+                        Action: 'Delete',
+                        catalog_id: '<%=Request["catalog_id"] %>',
+                        delid: row.id,
+                        B_Company_id:'<%=Request["B_Company_id"] %>'
+                    },
+                     function(data) {
+                         if (data == "" || data == null) {
+                             $.ligerDialog.close();
+                             grid.loadData(true);
+                             return true;
+                         }
+                         else {
+                             $.ligerDialog.warn(data);
+                             return false;
+                         }
+                     },
+                    'text');
+                }
+            });
+        }
+        function onSetTButton() {
+            var row = grid.getSelectedRow();
+            if (row == null) {
+                $.ligerDialog.alert('请选择行!');
+                return;
+            }
+            $.ligerDialog.open({ title: '设置工具栏按钮', url: 'SetTButton.aspx?id=' + row.id, name: 'winSetTButton', height: winHeight, width: winWidth, modal: false,
+                isResize: true
+            });
+        }
+        function onSetDefaultVal() {
+            var row = grid.getSelectedRow();
+            if (row == null) {
+                $.ligerDialog.alert('请选择行!');
+                return;
+            }
+            $.ligerDialog.open({ title: '设置默认值', url: 'SetDefaultVal.aspx?id=' + row.id, name: 'winSetDefaultVal', height: winHeight, width: winWidth, modal: false,
+                isResize: true
+            });
+        }
+    </script>
+    <style type="text/css">
+    #menu1,.l-menu-shadow{top:30px; left:50px;}
+    #menu1{  width:200px;}
+    </style>
+    
+    <script type="text/javascript">
+        var grid;
+        $(function ()
+        {
+            grid = $("#gridTable").ligerGrid({
+            columns: [
+                <%
+                List<CBaseObject> lstObjC=m_Table.ColumnMgr.GetList();
+                for (int i=0;i<lstObjC.Count;i++)
+                {
+                    CColumn col = (CColumn)lstObjC[i];
+                    if (col.Code.Equals("id", StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    else if (col.Code.Equals("Created", StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    else if (col.Code.Equals("Creator", StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    else if (col.Code.Equals("Updated", StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    else if (col.Code.Equals("Updator", StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    if(i<lstObjC.Count-1)
+                        Response.Write(string.Format("{{ display: '{0}', name: '{1}'}},",col.Name,col.Code));
+                    else
+                        Response.Write(string.Format("{{ display: '{0}', name: '{1}'}}",col.Name,col.Code));
+                }
+                 %>
+                ],
+                url: 'ViewPanel.aspx?Action=GetData&catalog_id=<%=Request["catalog_id"] %>',
+                dataAction: 'server', pageSize: 30,
+                width: '100%', height: '100%',
+                onSelectRow: function (data, rowindex, rowobj)
+                {
+                    //$.ligerDialog.alert('1选择的是' + data.id);
+                }
+            });
+        });
+    </script>
+</head>
+<body style="padding:6px; overflow:hidden;"> 
+  <div id="toptoolbar"></div> 
+   <div id="gridTable" style="margin:0; padding:0"></div>
+
+</body>
+</html>

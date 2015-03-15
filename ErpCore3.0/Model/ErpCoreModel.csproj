@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8B38CEF-0C6E-4D73-B673-A15FBB32AD5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ErpCoreModel</RootNamespace>
+    <AssemblyName>ErpCoreModel</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/object_MODEL_1/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>E:\数据库\mysql5.0\连接驱动\mysql-connector-net-5.0.8.1-noinstall\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AccessType.cs" />
+    <Compile Include="Base\CDesktopGroupAccessInRole.cs" />
+    <Compile Include="Base\CDesktopGroupAccessInRoleMgr.cs" />
+    <Compile Include="Base\CDesktopGroupAccessInUser.cs" />
+    <Compile Include="Base\CDesktopGroupAccessInUserMgr.cs" />
+    <Compile Include="Base\CBaseObjectMgrCache.cs" />
+    <Compile Include="Base\CCity.cs" />
+    <Compile Include="Base\CCityMgr.cs" />
+    <Compile Include="Base\CColumnAccessInRole.cs" />
+    <Compile Include="Base\CColumnAccessInRoleMgr.cs" />
+    <Compile Include="Base\CColumnAccessInUser.cs" />
+    <Compile Include="Base\CColumnAccessInUserMgr.cs" />
+    <Compile Include="Base\CCompany.cs" />
+    <Compile Include="Base\CCompanyMgr.cs" />
+    <Compile Include="Base\CContext.cs" />
+    <Compile Include="Base\CDistrict.cs" />
+    <Compile Include="Base\CDistrictMgr.cs" />
+    <Compile Include="Base\COrg.cs" />
+    <Compile Include="Base\COrgMgr.cs" />
+    <Compile Include="Base\CProvince.cs" />
+    <Compile Include="Base\CProvinceMgr.cs" />
+    <Compile Include="Base\CRole.cs" />
+    <Compile Include="Base\CRoleMgr.cs" />
+    <Compile Include="Base\CReportAccessInRole.cs" />
+    <Compile Include="Base\CReportAccessInRoleMgr.cs" />
+    <Compile Include="Base\CReportAccessInUser.cs" />
+    <Compile Include="Base\CReportAccessInUserMgr.cs" />
+    <Compile Include="Base\CSyncTime.cs" />
+    <Compile Include="Base\CSyncTimeMgr.cs" />
+    <Compile Include="Base\CSystemAccessInRole.cs" />
+    <Compile Include="Base\CSystemAccessInRoleMgr.cs" />
+    <Compile Include="Base\CSystemAccessInUser.cs" />
+    <Compile Include="Base\CSystemAccessInUserMgr.cs" />
+    <Compile Include="Base\CTableAccessInRole.cs" />
+    <Compile Include="Base\CTableAccessInRoleMgr.cs" />
+    <Compile Include="Base\CTableAccessInUser.cs" />
+    <Compile Include="Base\CTableAccessInUserMgr.cs" />
+    <Compile Include="Base\CUser.cs" />
+    <Compile Include="Base\CUserInOrg.cs" />
+    <Compile Include="Base\CUserInOrgMgr.cs" />
+    <Compile Include="Base\CUserInRole.cs" />
+    <Compile Include="Base\CUserInRoleMgr.cs" />
+    <Compile Include="Base\CUserMgr.cs" />
+    <Compile Include="Base\CViewAccessInRole.cs" />
+    <Compile Include="Base\CViewAccessInRoleMgr.cs" />
+    <Compile Include="Base\CViewAccessInUser.cs" />
+    <Compile Include="Base\CViewAccessInUserMgr.cs" />
+    <Compile Include="Framework\CColumnEnumVal.cs" />
+    <Compile Include="Framework\CColumnEnumValMgr.cs" />
+    <Compile Include="Framework\CTableInDiagram.cs" />
+    <Compile Include="Framework\CTableInDiagramMgr.cs" />
+    <Compile Include="Framework\CValue.cs" />
+    <Compile Include="Framework\CascadeType.cs" />
+    <Compile Include="Framework\CBaseObject.cs" />
+    <Compile Include="Framework\CBaseObjectMgr.cs" />
+    <Compile Include="Framework\CColumn.cs" />
+    <Compile Include="Framework\CColumnMgr.cs" />
+    <Compile Include="Framework\ColumnType.cs" />
+    <Compile Include="Framework\CDiagram.cs" />
+    <Compile Include="Framework\CDiagramMgr.cs" />
+    <Compile Include="Framework\CTable.cs" />
+    <Compile Include="Framework\CTableMgr.cs" />
+    <Compile Include="Framework\DbHelperOleDb.cs" />
+    <Compile Include="Framework\DbParameter.cs" />
+    <Compile Include="Framework\PO.cs" />
+    <Compile Include="Framework\CDataServer.cs" />
+    <Compile Include="Framework\CDataServerMgr.cs" />
+    <Compile Include="Framework\DB.cs" />
+    <Compile Include="Framework\DbHelperSqlite.cs" />
+    <Compile Include="Framework\DbHelperMySql.cs" />
+    <Compile Include="Framework\Util.cs" />
+    <Compile Include="IM\CFriend.cs" />
+    <Compile Include="IM\CFriendMgr.cs" />
+    <Compile Include="IM\CMessage.cs" />
+    <Compile Include="IM\CMessageMgr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\CReport.cs" />
+    <Compile Include="Report\CReportCatalog.cs" />
+    <Compile Include="Report\CReportCatalogMgr.cs" />
+    <Compile Include="Report\CReportMgr.cs" />
+    <Compile Include="Report\CStatItem.cs" />
+    <Compile Include="Report\CStatItemMgr.cs" />
+    <Compile Include="SubSystem\CSystem.cs" />
+    <Compile Include="SubSystem\CSystemMgr.cs" />
+    <Compile Include="UI\CColumnDefaultValInView.cs" />
+    <Compile Include="UI\CColumnDefaultValInViewDetail.cs" />
+    <Compile Include="UI\CColumnDefaultValInViewDetailMgr.cs" />
+    <Compile Include="UI\CColumnDefaultValInViewMgr.cs" />
+    <Compile Include="UI\CColumnInTableInWindowControl.cs" />
+    <Compile Include="UI\CColumnInTableInWindowControlMgr.cs" />
+    <Compile Include="UI\CColumnInView.cs" />
+    <Compile Include="UI\CColumnInViewDetail.cs" />
+    <Compile Include="UI\CColumnInViewDetailMgr.cs" />
+    <Compile Include="UI\CColumnInViewMgr.cs" />
+    <Compile Include="UI\CDesktop.cs" />
+    <Compile Include="UI\CDesktopApp.cs" />
+    <Compile Include="UI\CDesktopAppMgr.cs" />
+    <Compile Include="UI\CDesktopGroup.cs" />
+    <Compile Include="UI\CDesktopGroupMgr.cs" />
+    <Compile Include="UI\CDesktopMgr.cs" />
+    <Compile Include="UI\CFormCatalog.cs" />
+    <Compile Include="UI\CFormCatalogMgr.cs" />
+    <Compile Include="UI\CMenu.cs" />
+    <Compile Include="UI\CMenuMgr.cs" />
+    <Compile Include="UI\CNavigateBarButton.cs" />
+    <Compile Include="UI\CNavigateBarButtonMgr.cs" />
+    <Compile Include="UI\CRoleMenu.cs" />
+    <Compile Include="UI\CRoleMenuMgr.cs" />
+    <Compile Include="UI\CTableInWindowControl.cs" />
+    <Compile Include="UI\CTableInWindowControlMgr.cs" />
+    <Compile Include="UI\CTButtonInFormControl.cs" />
+    <Compile Include="UI\CTButtonInFormControlMgr.cs" />
+    <Compile Include="UI\CTButtonInTableInWindowControl.cs" />
+    <Compile Include="UI\CTButtonInTableInWindowControlMgr.cs" />
+    <Compile Include="UI\CTButtonInView.cs" />
+    <Compile Include="UI\CTButtonInViewMgr.cs" />
+    <Compile Include="UI\CUserMenu.cs" />
+    <Compile Include="UI\CUserMenuMgr.cs" />
+    <Compile Include="UI\CView.cs" />
+    <Compile Include="UI\CViewCatalog.cs" />
+    <Compile Include="UI\CViewCatalogMgr.cs" />
+    <Compile Include="UI\CViewDetail.cs" />
+    <Compile Include="UI\CViewDetailMgr.cs" />
+    <Compile Include="UI\CViewFilter.cs" />
+    <Compile Include="UI\CViewFilterMgr.cs" />
+    <Compile Include="UI\CViewMgr.cs" />
+    <Compile Include="UI\CWindow.cs" />
+    <Compile Include="UI\CWindowCatalog.cs" />
+    <Compile Include="UI\CWindowCatalogMgr.cs" />
+    <Compile Include="UI\CWindowMgr.cs" />
+    <Compile Include="UI\CLinkageWindowControl.cs" />
+    <Compile Include="UI\CLinkageWindowControlMgr.cs" />
+    <Compile Include="UI\ControlType.cs" />
+    <Compile Include="UI\CWindowControl.cs" />
+    <Compile Include="UI\CWindowControlMgr.cs" />
+    <Compile Include="UI\CFormControl.cs" />
+    <Compile Include="UI\CFormControlMgr.cs" />
+    <Compile Include="UI\CForm.cs" />
+    <Compile Include="UI\CFormMgr.cs" />
+    <Compile Include="UI\CTableInFormControl.cs" />
+    <Compile Include="UI\CTableInFormControlMgr.cs" />
+    <Compile Include="UI\CColumnInTableInFormControl.cs" />
+    <Compile Include="UI\CColumnInTableInFormControlMgr.cs" />
+    <Compile Include="UI\CTButtonInTableInFormControl.cs" />
+    <Compile Include="UI\CTButtonInTableInFormControlMgr.cs" />
+    <Compile Include="UI\CTButtonInWindowControl.cs" />
+    <Compile Include="UI\CTButtonInWindowControlMgr.cs" />
+    <Compile Include="Workflow\CActives.cs" />
+    <Compile Include="Workflow\CActivesDef.cs" />
+    <Compile Include="Workflow\CActivesDefMgr.cs" />
+    <Compile Include="Workflow\CActivesMgr.cs" />
+    <Compile Include="Workflow\CLink.cs" />
+    <Compile Include="Workflow\CLinkMgr.cs" />
+    <Compile Include="Workflow\CWorkflow.cs" />
+    <Compile Include="Workflow\CWorkflowCatalog.cs" />
+    <Compile Include="Workflow\CWorkflowCatalogMgr.cs" />
+    <Compile Include="Workflow\CWorkflowDef.cs" />
+    <Compile Include="Workflow\CWorkflowDefMgr.cs" />
+    <Compile Include="Workflow\CWorkflowMgr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

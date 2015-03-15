@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>新浪编辑器用法演示</title>
+<style type="text/css">
+body{font-size:12px;color:#333333;}
+</style>
+</head>
+<body>
+<div align='center' style='BORDER-RIGHT: #8394b2 1px dotted; BORDER-TOP: #8394b2 1px dotted; BACKGROUND: #eaecee; BORDER-LEFT: #8394b2 4px solid; BORDER-BOTTOM: 0px dotted; padding: 5px; width: 90px; color: blue'><b>调用：</b></div>
+<div style='BORDER-RIGHT: #8394b2 1px dotted; BORDER-TOP: #8394b2 1px dotted; BACKGROUND: #fafcfe; BORDER-LEFT: #8394b2 4px solid; BORDER-BOTTOM: #8394b2 1px dotted; padding: 3px'>
+&lt;input type=&quot;hidden&quot; name=&quot;content&quot; id=&quot;<font color="#FF0000">content</font>&quot;&gt;<br>
+	&lt;iframe  src=&quot;Edit/editor.htm?id=<font color="#FF0000">content</font>&amp;ReadCookie=0&quot; frameBorder=&quot;0&quot; 
+	marginHeight=&quot;0&quot; marginWidth=&quot;0&quot; scrolling=&quot;No&quot; width=&quot;700&quot; height=&quot;460&quot;&gt;&lt;/iframe&gt;<br>
+<br>
+	注意：id为调用参数(小写)，即隐藏的内容表单项id，
+ReadCookie设置是否读取上次未提交的数据，1为开启，0为关闭（注意大小写）。</div>
+<form name="form1" method="post" action=""> 
+<input type="hidden" name="content" id="content" value="<div>&nbsp;表单的内容</div>">
+<iframe id="myiframe" src="Edit/editor.htm?id=content&ReadCookie=0" frameborder="0" scrolling="no" width="700" height="460"></iframe>
+<br><br>
+<input type="button" value="查看表单内容" onClick="alert(content.value);">
+</form>
+</body>
+</html>
